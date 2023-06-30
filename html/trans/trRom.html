@@ -1,0 +1,451 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2023"><meta name="generator" content="DITA-OT"><title>Römische Zahlen</title><script src="../js/lunr-client.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><link rel="shortcut icon" href="../favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="../css/common-extended.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous"></head><body id="trRom"><div class="visually-hidden-focusable overflow-hidden p-2 bg-light"><div class="container-xl"><a class="d-inline-flex m-1 btn btn-outline-primary btn-sm" href="#ariaid-title1">Zum Hauptinhalt springen</a><a href="#bs-sidebar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Zur Dokumentennavigation springen</a></div></div><div class="bs-header"><header role="banner"><nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <!-- This shows the menu on mobile -->
+    <div class="bd-navbar-toggle">
+      <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar" aria-controls="bdSidebar" aria-label="Toggle docs navigation">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+    <a class="navbar-brand" href="/">
+      <img src="../resources/ocrd.png" class="logo" alt="Logo OCR-D" height="48px"> Ground Truth Richtlinien
+    </a>
+    <button class="navbar-toggler py-2 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-three-dots"></i>
+    </button>
+    
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">📢 GT-Level</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📑 Transkription</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📰 Layout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📓 Struktur-GT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📓 GT-labelling</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📓 PAGE Format</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📚 Page Addon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">❓ FAQ</a>
+          </li>
+        </ul>
+</div>
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item d-flex align-items-center">
+        <span class="nav-link py-2 pe-2"><i class="bi bi-search"></i></span>
+        <form class="bd-search position-relative me-auto" onsubmit="return search(this);">
+          <input id="search-input" type="search" dir="auto" class="form-control ds-input" placeholder="Search…" aria-label="Search for…" style="position: relative; vertical-align: top;">
+        </form>
+      </li>
+    </ul>
+</div>
+</nav></header></div><div class="bs-container" id="content"><nav role="navigation" id="bs-sidebar-nav" class="flex-column bd-links"><ul class="list-unstyled mb-0 py-3 pt-md-1"><li><div class="d-flex flex-row" id="menu-collapse-trigger-d44592e52"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d44592e52" aria-labelledby="menu-collapse-trigger-d44592e52" aria-controls="menu-collapse-d44592e52"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/index.html">Die Ground Truth Richtlinien</a></div><div id="menu-collapse-d44592e52" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trDokuKonventionen.html">Konventionen für diese Richtlinien</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/ground_truth_typ.html">Ground-Truth-Typ</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trLevels.html">📢 Übersicht der Ground-Truth-Level</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d44592e217"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 active" data-bs-target="#menu-collapse-d44592e217" aria-expanded="true" aria-current="true" aria-labelledby="menu-collapse-trigger-d44592e217" aria-controls="menu-collapse-d44592e217"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/transkription.html">📑 Transkription</a></div><div id="menu-collapse-d44592e217" class="collapse show"><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_4.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_2.html">Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_3_1.html">Level 3</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d44592e380"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d44592e380" aria-labelledby="menu-collapse-trigger-d44592e380" aria-controls="menu-collapse-d44592e380"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trGrundsaetze.html">Grundsätzliches zur Transkription</a></div><div id="menu-collapse-d44592e380" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_1_4.html">Wie im Level 1 transkribieren</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_2_4.html">Wie im Level 2 transkribieren</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_3_4.html">Wie im Level 3 transkribieren</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/sprache.html">Sprache</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d44592e580"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d44592e580" aria-labelledby="menu-collapse-trigger-d44592e580" aria-controls="menu-collapse-d44592e580"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSchreibweisen.html">Schreibweisen und Sonderzeichen</a></div><div id="menu-collapse-d44592e580" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row" id="menu-collapse-trigger-d44592e620"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d44592e620" aria-labelledby="menu-collapse-trigger-d44592e620" aria-controls="menu-collapse-d44592e620"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSchreibungIJ.html">Unterscheidung von I und J</a></div><div id="menu-collapse-d44592e620" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_2.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_und_3.html">Level 2 und 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d44592e743"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d44592e743" aria-labelledby="menu-collapse-trigger-d44592e743" aria-controls="menu-collapse-d44592e743"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSchreibungUV.html">Unterscheidung von u/f, u/v und v/u</a></div><div id="menu-collapse-d44592e743" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_3.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_und_3_0.html">Level 2 und 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d44592e863"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d44592e863" aria-labelledby="menu-collapse-trigger-d44592e863" aria-controls="menu-collapse-d44592e863"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSchreibungS.html">s-Grapheme</a></div><div id="menu-collapse-d44592e863" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_5.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_und_3_1.html">Level 2 und 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d44592e983"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d44592e983" aria-labelledby="menu-collapse-trigger-d44592e983" aria-controls="menu-collapse-d44592e983"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSchreibungR.html">r-Grapheme</a></div><div id="menu-collapse-d44592e983" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_6.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_und_3_2.html">Level 2 und 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d44592e1103"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d44592e1103" aria-labelledby="menu-collapse-trigger-d44592e1103" aria-controls="menu-collapse-d44592e1103"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trLigatur.html">Ligaturen</a></div><div id="menu-collapse-d44592e1103" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_1.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_2.html">Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_3.html">Level 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d44592e1263"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d44592e1263" aria-labelledby="menu-collapse-trigger-d44592e1263" aria-controls="menu-collapse-d44592e1263"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trUmlaute.html">Umlaute</a></div><div id="menu-collapse-d44592e1263" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_7.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_und_3_3.html">Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_3_2.html">Level 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d44592e1423"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d44592e1423" aria-labelledby="menu-collapse-trigger-d44592e1423" aria-controls="menu-collapse-d44592e1423"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trNasalstrich.html">Kürzungsstriche</a></div><div id="menu-collapse-d44592e1423" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_nasal_level_1.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_nasal_level_2.html">Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_nasal_level_3.html">Level 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d44592e1586"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d44592e1586" aria-labelledby="menu-collapse-trigger-d44592e1586" aria-controls="menu-collapse-d44592e1586"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trDiakritika.html">Diakritika</a></div><div id="menu-collapse-d44592e1586" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_dia_level_1_0.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_dia_level_2_0.html">Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_dia_level_3_0.html">Level 3</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trSilbentrennung.html">Silbentrennung</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d44592e1786"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 active" data-bs-target="#menu-collapse-d44592e1786" aria-expanded="true" aria-current="true" aria-labelledby="menu-collapse-trigger-d44592e1786" aria-controls="menu-collapse-d44592e1786"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSonderzeichen.html">Zahlen</a></div><div id="menu-collapse-d44592e1786" class="collapse show"><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trBruch.html">Brüche</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3 active" href="../trans/trRom.html">Römische Zahlen</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trHochgestellteZahl.html">Hochgestellte Zahlen</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trtiefgestellteZahl.html">Tiefgestellte Zahlen</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d44592e1986"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d44592e1986" aria-labelledby="menu-collapse-trigger-d44592e1986" aria-controls="menu-collapse-d44592e1986"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trTabellen.html">Tabellen</a></div><div id="menu-collapse-d44592e1986" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenTyp.html">Tabellen Typen</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenLevel1.html">Tabelle Level 1 sparse text</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenLevel2.html">Tabelle Level 2 table detection</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenLevel3.html">Tabelle Level 3 table structure</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenLevel4.html">Tabelle Level 4 full table structure</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d44592e2234"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d44592e2234" aria-labelledby="menu-collapse-trigger-d44592e2234" aria-controls="menu-collapse-d44592e2234"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trTabellenWerkzeuge.html">Erstellung von Tabellen</a></div><div id="menu-collapse-d44592e2234" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellen_Aletheia.html">Tabellen mit Aletheia erstellen</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenTranskribus.html">Tabellen mit Transkribus</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d44592e2356"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d44592e2356" aria-labelledby="menu-collapse-trigger-d44592e2356" aria-controls="menu-collapse-d44592e2356"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trTabellenFormat.html">Tabellen Formate</a></div><div id="menu-collapse-d44592e2356" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellen_Page.html">Tabellen in PAGE</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellen_TranskribusPage.html">Tabellen in Transkribus Page</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellen_ALTO.html">Tabellen in ALTO</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenLabelling.html">GT-Metadaten für Tabellen</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trHandschrift.html">Handschriftliche Anmerkungen</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d44592e2596"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d44592e2596" aria-labelledby="menu-collapse-trigger-d44592e2596" aria-controls="menu-collapse-d44592e2596"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trZeichensetzung.html">Zeichensetzung Grundregeln</a></div><div id="menu-collapse-d44592e2596" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trGedankenstrich.html">Striche : Gedankenstrich</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trAnfZeichen.html">Anführungszeichen</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d44592e2716"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d44592e2716" aria-labelledby="menu-collapse-trigger-d44592e2716" aria-controls="menu-collapse-d44592e2716"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/leerzeichen.html">Leerzeichen</a></div><div id="menu-collapse-d44592e2716" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_1_3.html">Level 1 und Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_2_3.html">Level 3</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_compareLevel1_3.html">Vergleich zwischen Level 1, 2 und Level 3</a></div></li></ul></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trErsetzungen.html">Ersetzungen</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d44592e2917"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d44592e2917" aria-labelledby="menu-collapse-trigger-d44592e2917" aria-controls="menu-collapse-d44592e2917"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trBeispiele.html">Übersichten und Beispiele von Alphabeten, Kürzungs-, Sonderzeichen und Ligaturen.</a></div><div id="menu-collapse-d44592e2917" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/ocr_d_koordinationsgremium_codierung.html">OCR-D Koordinationsgremium Kodierung</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trFremdsprache.html">Alphabete, Kürzungs- und Sonderzeichen</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trLigaturen2.html">Ligaturen</a></div></li></ul></div></li></ul></div></li></ul></nav><main role="main" class="container bs-main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title text-dark" id="ariaid-title1">Römische Zahlen</h1>
+    <div class="body"><section class="section"><h2 class="title h4 text-secondary">Level 1 und 2</h2>
+        
+        <p class="p">Große Römische Zahlen werden mit den lateinischen Großbuchstaben [u.a. I (1), V (5), X
+                (10), L (50), C (100), D (500) und M (1000)] gebildet und so transkribiert.</p>
+        <p class="p">Kleine römische Zahlen werden mit den kleinen lateinischen Buchstaben gebildet und transkribiert.</p>
+        <p class="p">Sonderformen werden ebenfalls mit lateinischen Großbuchstaben oder kleinen
+            lateinischen Buchstaben gebildet und transkribiert.</p>
+    </section>
+        <section class="section"><h2 class="title h4 text-secondary">Level 3</h2>
+            
+            <p class="p">Große Römische Zahlen und kleine römische Zahlen werden entsprechend des Unicodeblock Zahlzeichen (Number Forms, U+2150 bis U+218F) gebildet und so transkribiert.</p>
+        </section>
+        
+        <div class="border pt-3 ps-3 pe-3"><table class="table" id="trRom__tableROM"><colgroup><col><col><col><col><col></colgroup><thead class="thead">
+                    <tr>
+                        <th dir="ltr" class="entry" id="trRom__tableROM__entry__1"></th>
+                        <th class="entry" id="trRom__tableROM__entry__2"><strong class="ph b"><a class="xref" href="tr_level_1.html">Level 1</a></strong></th>
+                        <th class="entry" id="trRom__tableROM__entry__3"><strong class="ph b"><a class="xref" href="tr_level_2.html">Level 2</a></strong></th>
+                        <th class="entry" id="trRom__tableROM__entry__4"><strong class="ph b"><a class="xref" href="tr_level_3.html">Level 3</a></strong></th>
+                        <th class="entry" id="trRom__tableROM__entry__5"><strong class="ph b">Kommentar</strong></th>
+                    </tr>
+                </thead><tbody class="tbody">
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">I</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">I</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">Ⅰ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">1</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">II</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">II</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">Ⅱ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">2</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">III</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">III</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">Ⅲ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">3</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">IV</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">IV</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">Ⅳ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">4</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">V</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">V</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">Ⅴ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">5</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">VI</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">VI</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">Ⅵ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">6</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">VII</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">VII</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">Ⅶ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">7</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">VIII</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">VIII</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">Ⅷ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">8</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">IX</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">IX</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">Ⅸ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">9</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">X</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">X</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">Ⅹ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">10</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">XI</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">XI</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">Ⅺ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">11</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">XII</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">XII</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">Ⅻ </td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">12</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">L</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">L</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">Ⅼ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">50</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">C</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">C</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">Ⅽ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">100</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">D</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">D</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">Ⅾ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">500</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">M</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">M</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">Ⅿ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">1000</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">i</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">i</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ⅰ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">1</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">ii</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">ii</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ⅱ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">2</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">iii</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">iii</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ⅲ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">3</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">iv</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">iv</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ⅳ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">4</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">v</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">v</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ⅴ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">5</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">vi</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">vi</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ⅵ </td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">6</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">vii</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">vii</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ⅶ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">7</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">viii</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">viii</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ⅷ </td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">8</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">ix</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">ix</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ⅸ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">9</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">x</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">x</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ⅹ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">10</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">xi</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">xi</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ⅺ </td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">11</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">xii</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">xii</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ⅻ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">12</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">l</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">l</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ⅼ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">50</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">c</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">c</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ⅽ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">100</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">d</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">d</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ⅾ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">500</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">m</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">m</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ⅿ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">1.000</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">Ↄ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">Ↄ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">Ↄ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">100</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">ↄ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">ↄ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ↄ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">100</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">Iↄ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">Iↄ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">Ⅾ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">500</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">cIↄ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">cIↄ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ↀ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">1.000</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">CIↃ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">CIↃ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ↀ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">1.000</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">Iↄↄ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">Iↄↄ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ↁ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">5.000</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">IↃↃ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">IↃↃ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ↁ </td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">5.000</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">ccIↄↄ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">ccIↄↄ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ↂ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">10.000</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">CCIↃↃ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">CCIↃↃ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ↂ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">10.000</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">Iↄↄↄ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">Iↄↄↄ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ↇ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">50.000</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">IↃↃↃ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">IↃↃↃ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ↇ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">50.000</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">cccIↄↄↄ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">cccIↄↄↄ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ↈ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">100.000</td>
+                    </tr>
+                    <tr>
+                        <td class="entry" headers="trRom__tableROM__entry__1"></td>
+                        <td class="entry" headers="trRom__tableROM__entry__2">CCCIↃↃↃ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__3">CCCIↃↃↃ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__4">ↈ</td>
+                        <td class="entry" headers="trRom__tableROM__entry__5">100.000</td>
+                    </tr>
+                </tbody></table></div>
+        
+        
+        
+        
+        
+        
+
+<div class="p">Beispiel für die Jahresangabe 1647
+<div class="border pt-3 ps-3 pe-3"><table class="table table-bordered" id="trRom__table_mfp_dnd_b1b"><colgroup><col style="width:20%"><col style="width:20%"><col style="width:20%"><col style="width:27.80487804878049%"><col style="width:12.195121951219514%"></colgroup><tbody class="tbody">
+                        <tr>
+                            <td class="entry">Vorlage</td>
+                            <td class="entry"><strong class="ph b"><a class="xref" href="tr_level_1.html">Level 1</a></strong></td>
+                            <td class="entry"><strong class="ph b"><a class="xref" href="tr_level_2.html">Level 2</a></strong></td>
+                            <td class="entry"><strong class="ph b"><a class="xref" href="tr_level_3.html">Level 3</a></strong></td>
+                            <td class="entry">Kommentar</td>
+                        </tr>
+                        <tr>
+                            <td class="entry"><img class="image" id="trRom__image_dnt_2zh_3tb" height="23" src="images/trRom1.png" width="155"></td>
+                            <td class="entry">ⅽIↄ Iↄ c X L VII.</td>
+                            <td class="entry">ⅽIↄ Iↄ c X L VII.</td>
+                            <td class="entry">ⅽⅠↄ Ⅰↄ ⅽ Ⅹ Ⅼ Ⅶ.</td>
+                            <td class="entry">1647</td>
+                        </tr>
+                    </tbody></table></div>
+</div>
+</div>
+</article></main></div><script language="javascript">//
+          
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+              return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+              return new bootstrap.Popover(popoverTriggerEl)
+            })
+         // 
+        </script><footer role="contentinfo"><div class="footer">
+
+ <details>
+  <summary>Published by DTA.</summary>
+  <p>Alle Inhalte dieser Seite unterstehen, soweit nicht anders gekennzeichnet, der Lizenz CC BY-SA 3.0 DE.
+    Weitere Informationen finden Sie im Impressum sowie in unseren Hinweisen zum Datenschutz.</p>
+
+<p>Zitierempfehlung: "Konvertierung in das DTA-Basisformat, hrsg. v. d. Berlin-Brandenburgischen Akademie der Wissenschaften.
+&lt;http://deutschestextarchiv.de&gt;.".</p>
+
+<p>2011–2023 Deutsches Textarchiv, Zentrum Sprache der Berlin-Brandenburgischen Akademie der Wissenschaften
+Kontakt: redaktion@deutschestextarchiv.de</p>
+</details> 
+</div></footer></body></html>
