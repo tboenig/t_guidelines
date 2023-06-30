@@ -32,7 +32,7 @@
                         <row>
                             <entry/>
                             <entry>Page ID (GTS ID)<codeph outputclass="language-xml" props="XPath"
-                                    >/PcGts/@pcGtsId</codeph></entry>
+                                >/PcGts/@pcGtsId</codeph></entry>
                             <entry>x</entry>
                             <entry>x</entry>
                             <entry>x</entry>

@@ -9,6 +9,9 @@ nicht zu transkribieren. </p>
 <p>Handschriftliche Anmerkungen werden als <codeph>GraphicRegion
 type="handwritten-annotation"</codeph> gekennzeichnet.</p>
     </body>
-
+<related-links>
+<link format="dita"
+href="../pagexml/pagecontent_xsd_Complex_Type_pc_GraphicRegionType.dita#GraphicRegionType"/>
+</related-links>
 
 </topic>
