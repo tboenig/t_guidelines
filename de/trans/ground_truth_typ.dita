@@ -20,8 +20,5 @@
             <p>Der Ground Truth enthält ausschließlich annotierte <b>Dokumentzeilen</b>.
                 Annotationen des Textes sowie der Zeile sind vorgenommen worden.</p></section>
     </body>
-    <related-links>
-        <link href="structur_gt.dita"/>
-        <link href="transkription.dita"/>
-    </related-links>
+    
 </topic>
