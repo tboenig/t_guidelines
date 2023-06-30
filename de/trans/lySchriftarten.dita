@@ -25,10 +25,8 @@
                 &lt;/TextEquiv>
                 &lt;TextStyle fontFamily="fraktur" fontSize="53.0" bold="true"/>
             &lt;/TextLine>
- &lt;/TextRegion></codeblock>
-            Siehe: <xref
-                href="http://www.ocr-d.de/sites/all/gt_guidelines/pagecontent_xsd_Complex_Type_pc_TextStyleType.html?hl=textstyle"
-                format="html" scope="external">Complex Type pc:TextStyleType</xref>
+ &lt;/TextRegion></codeblock> Siehe: <xref
+                href="../pagexml/pagecontent_xsd_Complex_Type_pc_TextStyleType.dita"/>
         </example>
     </body>
     <topic id="lySchriftarten_cluster">

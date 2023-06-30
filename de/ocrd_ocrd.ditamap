@@ -174,9 +174,9 @@
         <topicref href="labeling/labeling_gt.ditamap" format="ditamap"/>
     </chapter>
 
-    <!--<chapter href="trans/trPage.dita">
+    <chapter href="trans/trPage.dita">
         <topicref href="pagexml/dok.ditamap" format="ditamap"/>
-    </chapter>-->
+    </chapter>
     <chapter href="trans/page_xml_erweiterungen.dita">
         <topicref href="trans/exif_pagexml_konkordanz.dita"/>
     </chapter>
