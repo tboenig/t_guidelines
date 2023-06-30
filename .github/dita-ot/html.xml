@@ -2,7 +2,7 @@
 <?xml-model href="https://www.dita-ot.org/rng/project.rnc" type="application/relax-ng-compact-syntax"?>
 <project xmlns="https://www.dita-ot.org/project">
   <context id="html" name="HTML">
-    <input href="../../kirk_konvertierung_workshop/konvertierung_basisformat.ditamap"/>
+    <input href="../../de/structur_gt.ditamap"/>
     <profile>
       <ditaval href="html.ditaval"/>
     </profile>
