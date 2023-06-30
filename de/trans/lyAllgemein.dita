@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="lyAllgemein">
+    <title>Allgemeines</title>
+    
+    <taskbody>
+        <context>
+        <p>Strukturell betrachtet besteht ein Buch aus verschiedenen Seitentypen und auf den Seiten
+befinden sich verschiedene strukturell sowie inhaltlich unterschiedliche Regionen. Vor allem die
+TextRegion kann näher spezifiziert werden so u. a. als Kolumnentitel, Überschrift, Absatzregion...
+Innerhalb dieser Regionen können die einzelnen Texte typographische Besonderheiten aufweisen, die
+ebenfalls ausgezeichnet werden können.</p>
+            <p>Abhängig vom <xref
+                href="structur_gtlevel1.dita">Erfassungslevel (Struktur-GT Level)</xref> sollte die Layout- und Strukturanalyse im Allgemeinen
+                folgendes umfassen:</p>
+        </context>
+        <steps>
+<step>
+                <cmd>Kennzeichnung des <xref href="lySeitentypen.dita">Seitentyps</xref></cmd>
+            </step>
+            <step>
+                <cmd>Kennzeichnung des <xref href="lyRand.dita">Seitenrands</xref> sowie Betrachtung
+                    des <xref href="lySatzspiegel.dita">Satzspiegel</xref></cmd>
+            </step>
+<step>
+                <cmd>Kennzeichnung der <xref href="lyTextregionen.dita">Seitenregionen</xref></cmd>
+            </step>
+<step>
+<cmd>Kennzeichnung von spezifischen Regionen auf der Seite</cmd>
+</step>
+<step>
+                <cmd>Kennzeichnung von <xref href="lyTypographie.dita">typographischen
+                        Besonderheiten</xref></cmd>
+            </step>
+            <step>
+                <cmd>Kennzeichnung der <xref href="lyLeserichtung.dita">Leserichtung</xref></cmd>
+            </step>
+        </steps>
+    </taskbody>
+    
+</task>
