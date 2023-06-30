@@ -1,0 +1,704 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2023"><meta name="generator" content="DITA-OT"><title>Complex Type pc:MetadataItemType</title><script src="../js/lunr-client.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><link rel="shortcut icon" href="../favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="../css/common-extended.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous"></head><body id="MetadataItemType"><div class="visually-hidden-focusable overflow-hidden p-2 bg-light"><div class="container-xl"><a class="d-inline-flex m-1 btn btn-outline-primary btn-sm" href="#ariaid-title1">Zum Hauptinhalt springen</a><a href="#bs-sidebar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Zur Dokumentennavigation springen</a></div></div><div class="bs-header"><header role="banner"><nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <!-- This shows the menu on mobile -->
+    <div class="bd-navbar-toggle">
+      <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar" aria-controls="bdSidebar" aria-label="Toggle docs navigation">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+    <a class="navbar-brand" href="/">
+      <img src="../resources/ocrd.png" class="logo" alt="Logo OCR-D" height="48px"> Ground Truth Richtlinien
+    </a>
+    <button class="navbar-toggler py-2 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-three-dots"></i>
+    </button>
+    
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">📢 GT-Level</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📑 Transkription</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📰 Layout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📓 Struktur-GT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📓 GT-labelling</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📓 PAGE Format</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📚 Page Addon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">❓ FAQ</a>
+          </li>
+        </ul>
+</div>
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item d-flex align-items-center">
+        <span class="nav-link py-2 pe-2"><i class="bi bi-search"></i></span>
+        <form class="bd-search position-relative me-auto" onsubmit="return search(this);">
+          <input id="search-input" type="search" dir="auto" class="form-control ds-input" placeholder="Search…" aria-label="Search for…" style="position: relative; vertical-align: top;">
+        </form>
+      </li>
+    </ul>
+</div>
+</nav></header></div><div class="bs-container" id="content"><nav role="navigation" id="bs-sidebar-nav" class="flex-column bd-links"><ul class="list-unstyled mb-0 py-3 pt-md-1"><li><div class="d-flex flex-row" id="menu-collapse-trigger-d535777e52"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d535777e52" aria-labelledby="menu-collapse-trigger-d535777e52" aria-controls="menu-collapse-d535777e52"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/index.html">Die Ground Truth Richtlinien</a></div><div id="menu-collapse-d535777e52" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trDokuKonventionen.html">Konventionen für diese Richtlinien</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/ground_truth_typ.html">Ground-Truth-Typ</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trLevels.html">📢 Übersicht der Ground-Truth-Level</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d535777e217"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d535777e217" aria-labelledby="menu-collapse-trigger-d535777e217" aria-controls="menu-collapse-d535777e217"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/transkription.html">📑 Transkription</a></div><div id="menu-collapse-d535777e217" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_4.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_2.html">Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_3_1.html">Level 3</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d535777e380"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d535777e380" aria-labelledby="menu-collapse-trigger-d535777e380" aria-controls="menu-collapse-d535777e380"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trGrundsaetze.html">Grundsätzliches zur Transkription</a></div><div id="menu-collapse-d535777e380" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_1_4.html">Wie im Level 1 transkribieren</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_2_4.html">Wie im Level 2 transkribieren</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_3_4.html">Wie im Level 3 transkribieren</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/sprache.html">Sprache</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d535777e580"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d535777e580" aria-labelledby="menu-collapse-trigger-d535777e580" aria-controls="menu-collapse-d535777e580"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSchreibweisen.html">Schreibweisen und Sonderzeichen</a></div><div id="menu-collapse-d535777e580" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row" id="menu-collapse-trigger-d535777e620"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d535777e620" aria-labelledby="menu-collapse-trigger-d535777e620" aria-controls="menu-collapse-d535777e620"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSchreibungIJ.html">Unterscheidung von I und J</a></div><div id="menu-collapse-d535777e620" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_2.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_und_3.html">Level 2 und 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d535777e743"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d535777e743" aria-labelledby="menu-collapse-trigger-d535777e743" aria-controls="menu-collapse-d535777e743"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSchreibungUV.html">Unterscheidung von u/f, u/v und v/u</a></div><div id="menu-collapse-d535777e743" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_3.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_und_3_0.html">Level 2 und 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d535777e863"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d535777e863" aria-labelledby="menu-collapse-trigger-d535777e863" aria-controls="menu-collapse-d535777e863"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSchreibungS.html">s-Grapheme</a></div><div id="menu-collapse-d535777e863" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_5.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_und_3_1.html">Level 2 und 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d535777e983"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d535777e983" aria-labelledby="menu-collapse-trigger-d535777e983" aria-controls="menu-collapse-d535777e983"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSchreibungR.html">r-Grapheme</a></div><div id="menu-collapse-d535777e983" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_6.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_und_3_2.html">Level 2 und 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d535777e1103"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d535777e1103" aria-labelledby="menu-collapse-trigger-d535777e1103" aria-controls="menu-collapse-d535777e1103"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trLigatur.html">Ligaturen</a></div><div id="menu-collapse-d535777e1103" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_1.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_2.html">Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_3.html">Level 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d535777e1263"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d535777e1263" aria-labelledby="menu-collapse-trigger-d535777e1263" aria-controls="menu-collapse-d535777e1263"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trUmlaute.html">Umlaute</a></div><div id="menu-collapse-d535777e1263" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_7.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_und_3_3.html">Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_3_2.html">Level 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d535777e1423"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d535777e1423" aria-labelledby="menu-collapse-trigger-d535777e1423" aria-controls="menu-collapse-d535777e1423"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trNasalstrich.html">Kürzungsstriche</a></div><div id="menu-collapse-d535777e1423" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_nasal_level_1.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_nasal_level_2.html">Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_nasal_level_3.html">Level 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d535777e1586"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d535777e1586" aria-labelledby="menu-collapse-trigger-d535777e1586" aria-controls="menu-collapse-d535777e1586"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trDiakritika.html">Diakritika</a></div><div id="menu-collapse-d535777e1586" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_dia_level_1_0.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_dia_level_2_0.html">Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_dia_level_3_0.html">Level 3</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trSilbentrennung.html">Silbentrennung</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d535777e1786"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d535777e1786" aria-labelledby="menu-collapse-trigger-d535777e1786" aria-controls="menu-collapse-d535777e1786"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSonderzeichen.html">Zahlen</a></div><div id="menu-collapse-d535777e1786" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trBruch.html">Brüche</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trRom.html">Römische Zahlen</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trHochgestellteZahl.html">Hochgestellte Zahlen</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trtiefgestellteZahl.html">Tiefgestellte Zahlen</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d535777e1986"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d535777e1986" aria-labelledby="menu-collapse-trigger-d535777e1986" aria-controls="menu-collapse-d535777e1986"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trTabellen.html">Tabellen</a></div><div id="menu-collapse-d535777e1986" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenTyp.html">Tabellen Typen</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenLevel1.html">Tabelle Level 1 sparse text</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenLevel2.html">Tabelle Level 2 table detection</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenLevel3.html">Tabelle Level 3 table structure</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenLevel4.html">Tabelle Level 4 full table structure</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d535777e2234"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d535777e2234" aria-labelledby="menu-collapse-trigger-d535777e2234" aria-controls="menu-collapse-d535777e2234"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trTabellenWerkzeuge.html">Erstellung von Tabellen</a></div><div id="menu-collapse-d535777e2234" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellen_Aletheia.html">Tabellen mit Aletheia erstellen</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenTranskribus.html">Tabellen mit Transkribus</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d535777e2356"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d535777e2356" aria-labelledby="menu-collapse-trigger-d535777e2356" aria-controls="menu-collapse-d535777e2356"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trTabellenFormat.html">Tabellen Formate</a></div><div id="menu-collapse-d535777e2356" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellen_Page.html">Tabellen in PAGE</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellen_TranskribusPage.html">Tabellen in Transkribus Page</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellen_ALTO.html">Tabellen in ALTO</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenLabelling.html">GT-Metadaten für Tabellen</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trHandschrift.html">Handschriftliche Anmerkungen</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d535777e2596"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d535777e2596" aria-labelledby="menu-collapse-trigger-d535777e2596" aria-controls="menu-collapse-d535777e2596"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trZeichensetzung.html">Zeichensetzung Grundregeln</a></div><div id="menu-collapse-d535777e2596" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trGedankenstrich.html">Striche : Gedankenstrich</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trAnfZeichen.html">Anführungszeichen</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d535777e2716"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d535777e2716" aria-labelledby="menu-collapse-trigger-d535777e2716" aria-controls="menu-collapse-d535777e2716"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/leerzeichen.html">Leerzeichen</a></div><div id="menu-collapse-d535777e2716" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_1_3.html">Level 1 und Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_2_3.html">Level 3</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_compareLevel1_3.html">Vergleich zwischen Level 1, 2 und Level 3</a></div></li></ul></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trErsetzungen.html">Ersetzungen</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d535777e2917"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d535777e2917" aria-labelledby="menu-collapse-trigger-d535777e2917" aria-controls="menu-collapse-d535777e2917"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trBeispiele.html">Übersichten und Beispiele von Alphabeten, Kürzungs-, Sonderzeichen und Ligaturen.</a></div><div id="menu-collapse-d535777e2917" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/ocr_d_koordinationsgremium_codierung.html">OCR-D Koordinationsgremium Kodierung</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trFremdsprache.html">Alphabete, Kürzungs- und Sonderzeichen</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trLigaturen2.html">Ligaturen</a></div></li></ul></div></li></ul></div></li></ul></nav><main role="main" class="container bs-main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="title text-dark" id="ariaid-title1">Complex Type pc:MetadataItemType</h1>
+   <div class="body">
+      <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:10.714285714285714%"><col style="width:89.28571428571429%"></colgroup><tbody class="tbody">
+               <tr>
+                  <td class="entry align-left">Namespace</td>
+                  <td class="entry align-left">http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15</td>
+               </tr>
+               <tr>
+                  <td class="entry align-left">Diagram</td>
+                  <td class="entry align-left">
+                     <div class="p">
+                        <figure class="fig imagemap figure w-100 mw-100 p-3" id="MetadataItemType__pagecontent_xsd_Complex_Type_pc_MetadataItemType">
+                           <img class="image figure-img img-fluid border rounded" src="img/pagecontent_xsd_Complex_Type_pc_MetadataItemType.jpeg">
+                           <div class="figgroup area">
+                              <span class="keyword shape">rect</span>
+                              <span class="ph coords">376,75,698,161</span>
+                              <a class="xref" href="#MetadataItemType_type">Attribute pc:MetadataItemType / @type</a>
+                           </div>
+                           <div class="figgroup area">
+                              <span class="keyword shape">rect</span>
+                              <span class="ph coords">376,231,555,317</span>
+                              <a class="xref" href="#MetadataItemType_name">Attribute pc:MetadataItemType / @name</a>
+                           </div>
+                           <div class="figgroup area">
+                              <span class="keyword shape">rect</span>
+                              <span class="ph coords">376,387,555,473</span>
+                              <a class="xref" href="#MetadataItemType_value">Attribute pc:MetadataItemType / @value</a>
+                           </div>
+                           <div class="figgroup area">
+                              <span class="keyword shape">rect</span>
+                              <span class="ph coords">376,543,594,629</span>
+                              <a class="xref" href="#MetadataItemType_date">Attribute pc:MetadataItemType / @date</a>
+                           </div>
+                           <div class="figgroup area">
+                              <span class="keyword shape">rect</span>
+                              <span class="ph coords">531,663,799,749</span>
+                              <a class="xref" href="#MetadataItemType_Labels">Element pc:MetadataItemType / pc:Labels</a>
+                           </div>
+                        </figure>
+
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="entry align-left">Used by</td>
+                  <td class="entry align-left">
+                     <div class="p">
+                        <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:20%"><col style="width:80%"></colgroup><tbody class="tbody">
+                                 <tr>
+                                    <td class="entry align-left">Element </td>
+                                    <td class="entry align-left">
+                                       <a class="xref" href="pagecontent_xsd_Complex_Type_pc_MetadataType.html#MetadataType_MetadataItem">Element pc:MetadataType / pc:MetadataItem</a>
+                                    </td>
+                                 </tr>
+                              </tbody></table></div>
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="entry align-left">Model</td>
+                  <td class="entry align-left">
+                     <a class="xref" href="#MetadataItemType_Labels">Element pc:MetadataItemType / pc:Labels</a>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="entry align-left">Children</td>
+                  <td class="entry align-left">
+                     <a class="xref" href="#MetadataItemType_Labels">Element pc:MetadataItemType / pc:Labels</a>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="entry align-left">Attributes</td>
+                  <td class="entry align-left">
+                     <div class="p">
+                        <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:42.857142857142854%"><col style="width:42.857142857142854%"><col style="width:14.285714285714285%"></colgroup><thead class="thead">
+                                 <tr>
+                                    <th class="entry align-left" id="MetadataItemType__entry__15">QName</th>
+                                    <th class="entry align-left" id="MetadataItemType__entry__16">Type</th>
+                                    <th class="entry align-left" id="MetadataItemType__entry__17">Use</th>
+                                 </tr>
+                              </thead><tbody class="tbody">
+                                 <tr>
+                                    <td class="entry align-left" headers="MetadataItemType__entry__15">
+                                       <a class="xref" href="#MetadataItemType_date">Attribute pc:MetadataItemType / @date</a>
+                                    </td>
+                                    <td class="entry align-left" headers="MetadataItemType__entry__16">dateTime</td>
+                                    <td class="entry align-left" headers="MetadataItemType__entry__17">optional</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left" headers="MetadataItemType__entry__15">
+                                       <a class="xref" href="#MetadataItemType_name">Attribute pc:MetadataItemType / @name</a>
+                                    </td>
+                                    <td class="entry align-left" headers="MetadataItemType__entry__16">string</td>
+                                    <td class="entry align-left" headers="MetadataItemType__entry__17">optional</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left" headers="MetadataItemType__entry__15 MetadataItemType__entry__16 MetadataItemType__entry__17" colspan="3">
+                                       <pre class="pre codeblock border rounded language-xml"><code>E.g. imagePhotometricInterpretation</code></pre>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left" headers="MetadataItemType__entry__15">
+                                       <a class="xref" href="#MetadataItemType_type">Attribute pc:MetadataItemType / @type</a>
+                                    </td>
+                                    <td class="entry align-left" headers="MetadataItemType__entry__16">restriction of string</td>
+                                    <td class="entry align-left" headers="MetadataItemType__entry__17">optional</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left" headers="MetadataItemType__entry__15 MetadataItemType__entry__16 MetadataItemType__entry__17" colspan="3">
+                                       <pre class="pre codeblock border rounded language-xml"><code>Type of metadata (e.g. author)</code></pre>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left" headers="MetadataItemType__entry__15">
+                                       <a class="xref" href="#MetadataItemType_value">Attribute pc:MetadataItemType / @value</a>
+                                    </td>
+                                    <td class="entry align-left" headers="MetadataItemType__entry__16">string</td>
+                                    <td class="entry align-left" headers="MetadataItemType__entry__17">required</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left" headers="MetadataItemType__entry__15 MetadataItemType__entry__16 MetadataItemType__entry__17" colspan="3">
+                                       <pre class="pre codeblock border rounded language-xml"><code>E.g. RGB</code></pre>
+                                    </td>
+                                 </tr>
+                              </tbody></table></div>
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="entry align-left">Source</td>
+                  <td class="entry align-left">
+                     <pre class="pre codeblock border rounded language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>complexType</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>MetadataItemType<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>sequence</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>element</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Labels<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>pc:LabelsType<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">minOccurs</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>0<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">maxOccurs</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>unbounded<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>documentation</span><span class="ph token punctuation">&gt;</span></span>Semantic labels / tags<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>documentation</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>element</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>sequence</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>attribute</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>type<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>documentation</span><span class="ph token punctuation">&gt;</span></span>Type of metadata (e.g. author)<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>documentation</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>simpleType</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>restriction</span> <span class="ph token attr-name">base</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>string<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>author<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>imageProperties<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>processingStep<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>other<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>restriction</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>simpleType</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>attribute</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>attribute</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>name<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>string<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>documentation</span><span class="ph token punctuation">&gt;</span></span>E.g. imagePhotometricInterpretation<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>documentation</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>attribute</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>attribute</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>value<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>string<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">use</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>required<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>documentation</span><span class="ph token punctuation">&gt;</span></span>E.g. RGB<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>documentation</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>attribute</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>attribute</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>date<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>dateTime<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>complexType</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+                  </td>
+               </tr>
+            </tbody></table></div>
+   </div>
+   <article class="topic nested1" aria-labelledby="ariaid-title2" id="MetadataItemType_type">
+      <h2 class="title text-dark" id="ariaid-title2">Attribute pc:MetadataItemType / @type</h2>
+      <div class="body">
+         <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:10.714285714285714%"><col style="width:89.28571428571429%"></colgroup><tbody class="tbody">
+                  <tr>
+                     <td class="entry align-left">Namespace</td>
+                     <td class="entry align-left">No namespace</td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Annotations</td>
+                     <td class="entry align-left">
+                        <pre class="pre codeblock border rounded language-xml"><code>Type of metadata (e.g. author)</code></pre>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Type</td>
+                     <td class="entry align-left">restriction of string</td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Properties</td>
+                     <td class="entry align-left">
+                        <div class="p">
+                           <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:20%"><col style="width:80%"></colgroup><tbody class="tbody">
+                                    <tr>
+                                       <td class="entry align-left">content: </td>
+                                       <td class="entry align-left">
+                                          <strong class="ph b">simple</strong>
+                                       </td>
+                                    </tr>
+                                 </tbody></table></div>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Facets</td>
+                     <td class="entry align-left">
+                        <div class="p">
+                           <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:20%"><col style="width:30%"><col style="width:50%"></colgroup><tbody class="tbody">
+                                    <tr>
+                                       <td class="entry align-left">enumeration</td>
+                                       <td class="entry align-left">author</td>
+                                       <td class="entry align-left"></td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left">enumeration</td>
+                                       <td class="entry align-left">imageProperties</td>
+                                       <td class="entry align-left"></td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left">enumeration</td>
+                                       <td class="entry align-left">processingStep</td>
+                                       <td class="entry align-left"></td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left">enumeration</td>
+                                       <td class="entry align-left">other</td>
+                                       <td class="entry align-left"></td>
+                                    </tr>
+                                 </tbody></table></div>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Used by</td>
+                     <td class="entry align-left">
+                        <div class="p">
+                           <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:20%"><col style="width:80%"></colgroup><tbody class="tbody">
+                                    <tr>
+                                       <td class="entry align-left">Complex Type </td>
+                                       <td class="entry align-left">
+                                          <a class="xref" href="#MetadataItemType">Complex Type pc:MetadataItemType</a>
+                                       </td>
+                                    </tr>
+                                 </tbody></table></div>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Source</td>
+                     <td class="entry align-left">
+                        <pre class="pre codeblock border rounded language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>attribute</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>type<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>documentation</span><span class="ph token punctuation">&gt;</span></span>Type of metadata (e.g. author)<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>documentation</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>simpleType</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>restriction</span> <span class="ph token attr-name">base</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>string<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>author<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>imageProperties<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>processingStep<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>other<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>restriction</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>simpleType</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>attribute</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+                     </td>
+                  </tr>
+               </tbody></table></div>
+      </div>
+   </article>
+   <article class="topic nested1" aria-labelledby="ariaid-title3" id="MetadataItemType_name">
+      <h2 class="title text-dark" id="ariaid-title3">Attribute pc:MetadataItemType / @name</h2>
+      <div class="body">
+         <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:10.714285714285714%"><col style="width:89.28571428571429%"></colgroup><tbody class="tbody">
+                  <tr>
+                     <td class="entry align-left">Namespace</td>
+                     <td class="entry align-left">No namespace</td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Annotations</td>
+                     <td class="entry align-left">
+                        <pre class="pre codeblock border rounded language-xml"><code>E.g. imagePhotometricInterpretation</code></pre>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Type</td>
+                     <td class="entry align-left">string</td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Properties</td>
+                     <td class="entry align-left">
+                        <div class="p">
+                           <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:20%"><col style="width:80%"></colgroup><tbody class="tbody">
+                                    <tr>
+                                       <td class="entry align-left">content: </td>
+                                       <td class="entry align-left">
+                                          <strong class="ph b">simple</strong>
+                                       </td>
+                                    </tr>
+                                 </tbody></table></div>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Used by</td>
+                     <td class="entry align-left">
+                        <div class="p">
+                           <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:20%"><col style="width:80%"></colgroup><tbody class="tbody">
+                                    <tr>
+                                       <td class="entry align-left">Complex Type </td>
+                                       <td class="entry align-left">
+                                          <a class="xref" href="#MetadataItemType">Complex Type pc:MetadataItemType</a>
+                                       </td>
+                                    </tr>
+                                 </tbody></table></div>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Source</td>
+                     <td class="entry align-left">
+                        <pre class="pre codeblock border rounded language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>attribute</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>name<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>string<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>documentation</span><span class="ph token punctuation">&gt;</span></span>E.g. imagePhotometricInterpretation<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>documentation</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>attribute</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+                     </td>
+                  </tr>
+               </tbody></table></div>
+      </div>
+   </article>
+   <article class="topic nested1" aria-labelledby="ariaid-title4" id="MetadataItemType_value">
+      <h2 class="title text-dark" id="ariaid-title4">Attribute pc:MetadataItemType / @value</h2>
+      <div class="body">
+         <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:10.714285714285714%"><col style="width:89.28571428571429%"></colgroup><tbody class="tbody">
+                  <tr>
+                     <td class="entry align-left">Namespace</td>
+                     <td class="entry align-left">No namespace</td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Annotations</td>
+                     <td class="entry align-left">
+                        <pre class="pre codeblock border rounded language-xml"><code>E.g. RGB</code></pre>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Type</td>
+                     <td class="entry align-left">string</td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Properties</td>
+                     <td class="entry align-left">
+                        <div class="p">
+                           <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:20%"><col style="width:80%"></colgroup><tbody class="tbody">
+                                    <tr>
+                                       <td class="entry align-left">use: </td>
+                                       <td class="entry align-left">
+                                          <strong class="ph b">required</strong>
+                                       </td>
+                                    </tr>
+                                 </tbody></table></div>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Used by</td>
+                     <td class="entry align-left">
+                        <div class="p">
+                           <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:20%"><col style="width:80%"></colgroup><tbody class="tbody">
+                                    <tr>
+                                       <td class="entry align-left">Complex Type </td>
+                                       <td class="entry align-left">
+                                          <a class="xref" href="#MetadataItemType">Complex Type pc:MetadataItemType</a>
+                                       </td>
+                                    </tr>
+                                 </tbody></table></div>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Source</td>
+                     <td class="entry align-left">
+                        <pre class="pre codeblock border rounded language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>attribute</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>value<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>string<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">use</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>required<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>documentation</span><span class="ph token punctuation">&gt;</span></span>E.g. RGB<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>documentation</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>attribute</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+                     </td>
+                  </tr>
+               </tbody></table></div>
+      </div>
+   </article>
+   <article class="topic nested1" aria-labelledby="ariaid-title5" id="MetadataItemType_date">
+      <h2 class="title text-dark" id="ariaid-title5">Attribute pc:MetadataItemType / @date</h2>
+      <div class="body">
+         <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:10.714285714285714%"><col style="width:89.28571428571429%"></colgroup><tbody class="tbody">
+                  <tr>
+                     <td class="entry align-left">Namespace</td>
+                     <td class="entry align-left">No namespace</td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Type</td>
+                     <td class="entry align-left">dateTime</td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Properties</td>
+                     <td class="entry align-left">
+                        <div class="p">
+                           <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:20%"><col style="width:80%"></colgroup><tbody class="tbody">
+                                    <tr>
+                                       <td class="entry align-left">content: </td>
+                                       <td class="entry align-left">
+                                          <strong class="ph b">simple</strong>
+                                       </td>
+                                    </tr>
+                                 </tbody></table></div>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Used by</td>
+                     <td class="entry align-left">
+                        <div class="p">
+                           <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:20%"><col style="width:80%"></colgroup><tbody class="tbody">
+                                    <tr>
+                                       <td class="entry align-left">Complex Type </td>
+                                       <td class="entry align-left">
+                                          <a class="xref" href="#MetadataItemType">Complex Type pc:MetadataItemType</a>
+                                       </td>
+                                    </tr>
+                                 </tbody></table></div>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Source</td>
+                     <td class="entry align-left">
+                        <pre class="pre codeblock border rounded language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>attribute</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>date<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>dateTime<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+                     </td>
+                  </tr>
+               </tbody></table></div>
+      </div>
+   </article>
+   <article class="topic nested1" aria-labelledby="ariaid-title6" id="MetadataItemType_Labels">
+      <h2 class="title text-dark" id="ariaid-title6">Element pc:MetadataItemType / pc:Labels</h2>
+      <div class="body">
+         <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:10.714285714285714%"><col style="width:89.28571428571429%"></colgroup><tbody class="tbody">
+                  <tr>
+                     <td class="entry align-left">Namespace</td>
+                     <td class="entry align-left">http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15</td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Annotations</td>
+                     <td class="entry align-left">
+                        <pre class="pre codeblock border rounded language-xml"><code>Semantic labels / tags</code></pre>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Diagram</td>
+                     <td class="entry align-left">
+                        <div class="p">
+                           <figure class="fig imagemap figure w-100 mw-100 p-3" id="MetadataItemType_Labels__pagecontent_xsd_Element_pc_Labels">
+                              <img class="image figure-img img-fluid border rounded" src="img/pagecontent_xsd_Element_pc_Labels.jpeg">
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">400,153,634,239</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_LabelsType.html#LabelsType_externalModel">Attribute pc:LabelsType / @externalModel</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">400,335,592,421</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_LabelsType.html#LabelsType_externalId">Attribute pc:LabelsType / @externalId</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">400,543,579,629</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_LabelsType.html#LabelsType_prefix">Attribute pc:LabelsType / @prefix</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">400,725,600,811</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_LabelsType.html#LabelsType_comments">Attribute pc:LabelsType / @comments</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">555,845,812,931</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_LabelsType.html#LabelsType_Label">Element pc:LabelsType / pc:Label</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">350,6,593,50</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_LabelsType.html#LabelsType">Complex Type pc:LabelsType</a>
+                              </div>
+                           </figure>
+
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Type</td>
+                     <td class="entry align-left">
+                        <a class="xref" href="pagecontent_xsd_Complex_Type_pc_LabelsType.html#LabelsType">Complex Type pc:LabelsType</a>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Properties</td>
+                     <td class="entry align-left">
+                        <div class="p">
+                           <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:20%"><col style="width:80%"></colgroup><tbody class="tbody">
+                                    <tr>
+                                       <td class="entry align-left">content: </td>
+                                       <td class="entry align-left">
+                                          <strong class="ph b">complex</strong>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left">minOccurs: </td>
+                                       <td class="entry align-left">
+                                          <strong class="ph b">0</strong>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left">maxOccurs: </td>
+                                       <td class="entry align-left">
+                                          <strong class="ph b">unbounded</strong>
+                                       </td>
+                                    </tr>
+                                 </tbody></table></div>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Model</td>
+                     <td class="entry align-left">
+                        <a class="xref" href="pagecontent_xsd_Complex_Type_pc_LabelsType.html#LabelsType_Label">Element pc:LabelsType / pc:Label</a>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Children</td>
+                     <td class="entry align-left">
+                        <a class="xref" href="pagecontent_xsd_Complex_Type_pc_LabelsType.html#LabelsType_Label">Element pc:LabelsType / pc:Label</a>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Instance</td>
+                     <td class="entry align-left">
+                        <pre class="pre codeblock border rounded language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span><span class="ph token namespace">pc:</span>Labels</span> <span class="ph token attr-name">comments</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">externalId</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">externalModel</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">prefix</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name"><span class="ph token namespace">xmlns:</span>pc</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span><span class="ph token namespace">pc:</span>Label</span> <span class="ph token attr-name">comments</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>{0,unbounded}<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span><span class="ph token namespace">pc:</span>Label</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span><span class="ph token namespace">pc:</span>Labels</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Attributes</td>
+                     <td class="entry align-left">
+                        <div class="p">
+                           <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:42.857142857142854%"><col style="width:42.857142857142854%"><col style="width:14.285714285714285%"></colgroup><thead class="thead">
+                                    <tr>
+                                       <th class="entry align-left" id="MetadataItemType_Labels__entry__25">QName</th>
+                                       <th class="entry align-left" id="MetadataItemType_Labels__entry__26">Type</th>
+                                       <th class="entry align-left" id="MetadataItemType_Labels__entry__27">Use</th>
+                                    </tr>
+                                 </thead><tbody class="tbody">
+                                    <tr>
+                                       <td class="entry align-left" headers="MetadataItemType_Labels__entry__25">
+                                          <a class="xref" href="pagecontent_xsd_Complex_Type_pc_LabelsType.html#LabelsType_comments">Attribute pc:LabelsType / @comments</a>
+                                       </td>
+                                       <td class="entry align-left" headers="MetadataItemType_Labels__entry__26">string</td>
+                                       <td class="entry align-left" headers="MetadataItemType_Labels__entry__27">optional</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="MetadataItemType_Labels__entry__25">
+                                          <a class="xref" href="pagecontent_xsd_Complex_Type_pc_LabelsType.html#LabelsType_externalId">Attribute pc:LabelsType / @externalId</a>
+                                       </td>
+                                       <td class="entry align-left" headers="MetadataItemType_Labels__entry__26">string</td>
+                                       <td class="entry align-left" headers="MetadataItemType_Labels__entry__27">optional</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="MetadataItemType_Labels__entry__25 MetadataItemType_Labels__entry__26 MetadataItemType_Labels__entry__27" colspan="3">
+                                          <pre class="pre codeblock border rounded language-xml"><code>E.g. an RDF resource identifier
+(to be used as subject or object of an RDF triple)</code></pre>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="MetadataItemType_Labels__entry__25">
+                                          <a class="xref" href="pagecontent_xsd_Complex_Type_pc_LabelsType.html#LabelsType_externalModel">Attribute pc:LabelsType / @externalModel</a>
+                                       </td>
+                                       <td class="entry align-left" headers="MetadataItemType_Labels__entry__26">string</td>
+                                       <td class="entry align-left" headers="MetadataItemType_Labels__entry__27">optional</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="MetadataItemType_Labels__entry__25 MetadataItemType_Labels__entry__26 MetadataItemType_Labels__entry__27" colspan="3">
+                                          <pre class="pre codeblock border rounded language-xml"><code>Reference to external model / ontology / schema</code></pre>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="MetadataItemType_Labels__entry__25">
+                                          <a class="xref" href="pagecontent_xsd_Complex_Type_pc_LabelsType.html#LabelsType_prefix">Attribute pc:LabelsType / @prefix</a>
+                                       </td>
+                                       <td class="entry align-left" headers="MetadataItemType_Labels__entry__26">string</td>
+                                       <td class="entry align-left" headers="MetadataItemType_Labels__entry__27">optional</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="MetadataItemType_Labels__entry__25 MetadataItemType_Labels__entry__26 MetadataItemType_Labels__entry__27" colspan="3">
+                                          <pre class="pre codeblock border rounded language-xml"><code>Prefix for all labels (e.g. first part of an URI)</code></pre>
+                                       </td>
+                                    </tr>
+                                 </tbody></table></div>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Source</td>
+                     <td class="entry align-left">
+                        <pre class="pre codeblock border rounded language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>element</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Labels<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>pc:LabelsType<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">minOccurs</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>0<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">maxOccurs</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>unbounded<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>documentation</span><span class="ph token punctuation">&gt;</span></span>Semantic labels / tags<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>documentation</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>element</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+                     </td>
+                  </tr>
+               </tbody></table></div>
+      </div>
+   </article>
+</article></main></div><script language="javascript">//
+          
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+              return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+              return new bootstrap.Popover(popoverTriggerEl)
+            })
+         // 
+        </script><footer role="contentinfo"><div class="footer">
+
+ <details>
+  <summary>Published by DTA.</summary>
+  <p>Alle Inhalte dieser Seite unterstehen, soweit nicht anders gekennzeichnet, der Lizenz CC BY-SA 3.0 DE.
+    Weitere Informationen finden Sie im Impressum sowie in unseren Hinweisen zum Datenschutz.</p>
+
+<p>Zitierempfehlung: "Konvertierung in das DTA-Basisformat, hrsg. v. d. Berlin-Brandenburgischen Akademie der Wissenschaften.
+&lt;http://deutschestextarchiv.de&gt;.".</p>
+
+<p>2011–2023 Deutsches Textarchiv, Zentrum Sprache der Berlin-Brandenburgischen Akademie der Wissenschaften
+Kontakt: redaktion@deutschestextarchiv.de</p>
+</details> 
+</div></footer></body></html>

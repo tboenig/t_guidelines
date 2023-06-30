@@ -1,0 +1,728 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2023"><meta name="generator" content="DITA-OT"><title>Complex Type pc:ReadingOrderType</title><script src="../js/lunr-client.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><link rel="shortcut icon" href="../favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="../css/common-extended.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous"></head><body id="ReadingOrderType"><div class="visually-hidden-focusable overflow-hidden p-2 bg-light"><div class="container-xl"><a class="d-inline-flex m-1 btn btn-outline-primary btn-sm" href="#ariaid-title1">Zum Hauptinhalt springen</a><a href="#bs-sidebar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Zur Dokumentennavigation springen</a></div></div><div class="bs-header"><header role="banner"><nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <!-- This shows the menu on mobile -->
+    <div class="bd-navbar-toggle">
+      <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar" aria-controls="bdSidebar" aria-label="Toggle docs navigation">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+    <a class="navbar-brand" href="/">
+      <img src="../resources/ocrd.png" class="logo" alt="Logo OCR-D" height="48px"> Ground Truth Richtlinien
+    </a>
+    <button class="navbar-toggler py-2 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-three-dots"></i>
+    </button>
+    
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">📢 GT-Level</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📑 Transkription</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📰 Layout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📓 Struktur-GT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📓 GT-labelling</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📓 PAGE Format</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📚 Page Addon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">❓ FAQ</a>
+          </li>
+        </ul>
+</div>
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item d-flex align-items-center">
+        <span class="nav-link py-2 pe-2"><i class="bi bi-search"></i></span>
+        <form class="bd-search position-relative me-auto" onsubmit="return search(this);">
+          <input id="search-input" type="search" dir="auto" class="form-control ds-input" placeholder="Search…" aria-label="Search for…" style="position: relative; vertical-align: top;">
+        </form>
+      </li>
+    </ul>
+</div>
+</nav></header></div><div class="bs-container" id="content"><nav role="navigation" id="bs-sidebar-nav" class="flex-column bd-links"><ul class="list-unstyled mb-0 py-3 pt-md-1"><li><div class="d-flex flex-row" id="menu-collapse-trigger-d364073e52"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d364073e52" aria-labelledby="menu-collapse-trigger-d364073e52" aria-controls="menu-collapse-d364073e52"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/index.html">Die Ground Truth Richtlinien</a></div><div id="menu-collapse-d364073e52" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trDokuKonventionen.html">Konventionen für diese Richtlinien</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/ground_truth_typ.html">Ground-Truth-Typ</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trLevels.html">📢 Übersicht der Ground-Truth-Level</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d364073e217"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d364073e217" aria-labelledby="menu-collapse-trigger-d364073e217" aria-controls="menu-collapse-d364073e217"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/transkription.html">📑 Transkription</a></div><div id="menu-collapse-d364073e217" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_4.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_2.html">Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_3_1.html">Level 3</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d364073e380"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d364073e380" aria-labelledby="menu-collapse-trigger-d364073e380" aria-controls="menu-collapse-d364073e380"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trGrundsaetze.html">Grundsätzliches zur Transkription</a></div><div id="menu-collapse-d364073e380" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_1_4.html">Wie im Level 1 transkribieren</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_2_4.html">Wie im Level 2 transkribieren</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_3_4.html">Wie im Level 3 transkribieren</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/sprache.html">Sprache</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d364073e580"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d364073e580" aria-labelledby="menu-collapse-trigger-d364073e580" aria-controls="menu-collapse-d364073e580"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSchreibweisen.html">Schreibweisen und Sonderzeichen</a></div><div id="menu-collapse-d364073e580" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row" id="menu-collapse-trigger-d364073e620"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d364073e620" aria-labelledby="menu-collapse-trigger-d364073e620" aria-controls="menu-collapse-d364073e620"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSchreibungIJ.html">Unterscheidung von I und J</a></div><div id="menu-collapse-d364073e620" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_2.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_und_3.html">Level 2 und 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d364073e743"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d364073e743" aria-labelledby="menu-collapse-trigger-d364073e743" aria-controls="menu-collapse-d364073e743"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSchreibungUV.html">Unterscheidung von u/f, u/v und v/u</a></div><div id="menu-collapse-d364073e743" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_3.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_und_3_0.html">Level 2 und 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d364073e863"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d364073e863" aria-labelledby="menu-collapse-trigger-d364073e863" aria-controls="menu-collapse-d364073e863"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSchreibungS.html">s-Grapheme</a></div><div id="menu-collapse-d364073e863" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_5.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_und_3_1.html">Level 2 und 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d364073e983"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d364073e983" aria-labelledby="menu-collapse-trigger-d364073e983" aria-controls="menu-collapse-d364073e983"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSchreibungR.html">r-Grapheme</a></div><div id="menu-collapse-d364073e983" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_6.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_und_3_2.html">Level 2 und 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d364073e1103"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d364073e1103" aria-labelledby="menu-collapse-trigger-d364073e1103" aria-controls="menu-collapse-d364073e1103"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trLigatur.html">Ligaturen</a></div><div id="menu-collapse-d364073e1103" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_1.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_2.html">Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_3.html">Level 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d364073e1263"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d364073e1263" aria-labelledby="menu-collapse-trigger-d364073e1263" aria-controls="menu-collapse-d364073e1263"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trUmlaute.html">Umlaute</a></div><div id="menu-collapse-d364073e1263" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_7.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_und_3_3.html">Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_3_2.html">Level 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d364073e1423"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d364073e1423" aria-labelledby="menu-collapse-trigger-d364073e1423" aria-controls="menu-collapse-d364073e1423"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trNasalstrich.html">Kürzungsstriche</a></div><div id="menu-collapse-d364073e1423" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_nasal_level_1.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_nasal_level_2.html">Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_nasal_level_3.html">Level 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d364073e1586"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d364073e1586" aria-labelledby="menu-collapse-trigger-d364073e1586" aria-controls="menu-collapse-d364073e1586"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trDiakritika.html">Diakritika</a></div><div id="menu-collapse-d364073e1586" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_dia_level_1_0.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_dia_level_2_0.html">Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_dia_level_3_0.html">Level 3</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trSilbentrennung.html">Silbentrennung</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d364073e1786"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d364073e1786" aria-labelledby="menu-collapse-trigger-d364073e1786" aria-controls="menu-collapse-d364073e1786"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSonderzeichen.html">Zahlen</a></div><div id="menu-collapse-d364073e1786" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trBruch.html">Brüche</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trRom.html">Römische Zahlen</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trHochgestellteZahl.html">Hochgestellte Zahlen</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trtiefgestellteZahl.html">Tiefgestellte Zahlen</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d364073e1986"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d364073e1986" aria-labelledby="menu-collapse-trigger-d364073e1986" aria-controls="menu-collapse-d364073e1986"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trTabellen.html">Tabellen</a></div><div id="menu-collapse-d364073e1986" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenTyp.html">Tabellen Typen</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenLevel1.html">Tabelle Level 1 sparse text</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenLevel2.html">Tabelle Level 2 table detection</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenLevel3.html">Tabelle Level 3 table structure</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenLevel4.html">Tabelle Level 4 full table structure</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d364073e2234"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d364073e2234" aria-labelledby="menu-collapse-trigger-d364073e2234" aria-controls="menu-collapse-d364073e2234"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trTabellenWerkzeuge.html">Erstellung von Tabellen</a></div><div id="menu-collapse-d364073e2234" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellen_Aletheia.html">Tabellen mit Aletheia erstellen</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenTranskribus.html">Tabellen mit Transkribus</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d364073e2356"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d364073e2356" aria-labelledby="menu-collapse-trigger-d364073e2356" aria-controls="menu-collapse-d364073e2356"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trTabellenFormat.html">Tabellen Formate</a></div><div id="menu-collapse-d364073e2356" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellen_Page.html">Tabellen in PAGE</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellen_TranskribusPage.html">Tabellen in Transkribus Page</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellen_ALTO.html">Tabellen in ALTO</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenLabelling.html">GT-Metadaten für Tabellen</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trHandschrift.html">Handschriftliche Anmerkungen</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d364073e2596"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d364073e2596" aria-labelledby="menu-collapse-trigger-d364073e2596" aria-controls="menu-collapse-d364073e2596"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trZeichensetzung.html">Zeichensetzung Grundregeln</a></div><div id="menu-collapse-d364073e2596" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trGedankenstrich.html">Striche : Gedankenstrich</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trAnfZeichen.html">Anführungszeichen</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d364073e2716"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d364073e2716" aria-labelledby="menu-collapse-trigger-d364073e2716" aria-controls="menu-collapse-d364073e2716"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/leerzeichen.html">Leerzeichen</a></div><div id="menu-collapse-d364073e2716" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_1_3.html">Level 1 und Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_2_3.html">Level 3</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_compareLevel1_3.html">Vergleich zwischen Level 1, 2 und Level 3</a></div></li></ul></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trErsetzungen.html">Ersetzungen</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d364073e2917"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d364073e2917" aria-labelledby="menu-collapse-trigger-d364073e2917" aria-controls="menu-collapse-d364073e2917"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trBeispiele.html">Übersichten und Beispiele von Alphabeten, Kürzungs-, Sonderzeichen und Ligaturen.</a></div><div id="menu-collapse-d364073e2917" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/ocr_d_koordinationsgremium_codierung.html">OCR-D Koordinationsgremium Kodierung</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trFremdsprache.html">Alphabete, Kürzungs- und Sonderzeichen</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trLigaturen2.html">Ligaturen</a></div></li></ul></div></li></ul></div></li></ul></nav><main role="main" class="container bs-main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="title text-dark" id="ariaid-title1">Complex Type pc:ReadingOrderType</h1>
+   <div class="body">
+      <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:10.714285714285714%"><col style="width:89.28571428571429%"></colgroup><tbody class="tbody">
+               <tr>
+                  <td class="entry align-left">Namespace</td>
+                  <td class="entry align-left">http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15</td>
+               </tr>
+               <tr>
+                  <td class="entry align-left">Annotations</td>
+                  <td class="entry align-left">
+                     <pre class="pre codeblock border rounded language-xml"><code>Definition of the reading order within the page.
+To express a reading order between elements
+they have to be included in an OrderedGroup.
+Groups may contain further groups.</code></pre>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="entry align-left">Diagram</td>
+                  <td class="entry align-left">
+                     <div class="p">
+                        <figure class="fig imagemap figure w-100 mw-100 p-3" id="ReadingOrderType__pagecontent_xsd_Complex_Type_pc_ReadingOrderType">
+                           <img class="image figure-img img-fluid border rounded" src="img/pagecontent_xsd_Complex_Type_pc_ReadingOrderType.jpeg">
+                           <div class="figgroup area">
+                              <span class="keyword shape">rect</span>
+                              <span class="ph coords">398,75,716,161</span>
+                              <a class="xref" href="#ReadingOrderType_conf">Attribute pc:ReadingOrderType / @conf</a>
+                           </div>
+                           <div class="figgroup area">
+                              <span class="keyword shape">rect</span>
+                              <span class="ph coords">512,245,856,331</span>
+                              <a class="xref" href="#ReadingOrderType_OrderedGroup">Element pc:ReadingOrderType / pc:OrderedGroup</a>
+                           </div>
+                           <div class="figgroup area">
+                              <span class="keyword shape">rect</span>
+                              <span class="ph coords">512,351,879,437</span>
+                              <a class="xref" href="#ReadingOrderType_UnorderedGroup">Element pc:ReadingOrderType / pc:UnorderedGroup</a>
+                           </div>
+                        </figure>
+
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="entry align-left">Used by</td>
+                  <td class="entry align-left">
+                     <div class="p">
+                        <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:20%"><col style="width:80%"></colgroup><tbody class="tbody">
+                                 <tr>
+                                    <td class="entry align-left">Element </td>
+                                    <td class="entry align-left">
+                                       <a class="xref" href="pagecontent_xsd_Complex_Type_pc_PageType.html#PageType_ReadingOrder">Element pc:PageType / pc:ReadingOrder</a>
+                                    </td>
+                                 </tr>
+                              </tbody></table></div>
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="entry align-left">Model</td>
+                  <td class="entry align-left">
+                     <a class="xref" href="#ReadingOrderType_OrderedGroup">Element pc:ReadingOrderType / pc:OrderedGroup</a> | <a class="xref" href="#ReadingOrderType_UnorderedGroup">Element pc:ReadingOrderType / pc:UnorderedGroup</a>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="entry align-left">Children</td>
+                  <td class="entry align-left">
+                     <a class="xref" href="#ReadingOrderType_OrderedGroup">Element pc:ReadingOrderType / pc:OrderedGroup</a>, <a class="xref" href="#ReadingOrderType_UnorderedGroup">Element pc:ReadingOrderType / pc:UnorderedGroup</a>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="entry align-left">Attributes</td>
+                  <td class="entry align-left">
+                     <div class="p">
+                        <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:42.857142857142854%"><col style="width:42.857142857142854%"><col style="width:14.285714285714285%"></colgroup><thead class="thead">
+                                 <tr>
+                                    <th class="entry align-left" id="ReadingOrderType__entry__17">QName</th>
+                                    <th class="entry align-left" id="ReadingOrderType__entry__18">Type</th>
+                                    <th class="entry align-left" id="ReadingOrderType__entry__19">Use</th>
+                                 </tr>
+                              </thead><tbody class="tbody">
+                                 <tr>
+                                    <td class="entry align-left" headers="ReadingOrderType__entry__17">
+                                       <a class="xref" href="#ReadingOrderType_conf">Attribute pc:ReadingOrderType / @conf</a>
+                                    </td>
+                                    <td class="entry align-left" headers="ReadingOrderType__entry__18">
+                                       <a class="xref" href="pagecontent_xsd_Simple_Type_pc_ConfSimpleType.html#ConfSimpleType">Simple Type pc:ConfSimpleType</a>
+                                    </td>
+                                    <td class="entry align-left" headers="ReadingOrderType__entry__19">optional</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left" headers="ReadingOrderType__entry__17 ReadingOrderType__entry__18 ReadingOrderType__entry__19" colspan="3">
+                                       <pre class="pre codeblock border rounded language-xml"><code>Confidence value (between 0 and 1)</code></pre>
+                                    </td>
+                                 </tr>
+                              </tbody></table></div>
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="entry align-left">Source</td>
+                  <td class="entry align-left">
+                     <pre class="pre codeblock border rounded language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>complexType</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>ReadingOrderType<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>documentation</span><span class="ph token punctuation">&gt;</span></span>Definition of the reading order within the page. To express a reading order between elements they have to be included in an OrderedGroup. Groups may contain further groups.<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>documentation</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>choice</span> <span class="ph token attr-name">minOccurs</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>1<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">maxOccurs</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>1<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>element</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>OrderedGroup<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>pc:OrderedGroupType<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>element</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>UnorderedGroup<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>pc:UnorderedGroupType<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>choice</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>attribute</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>conf<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>pc:ConfSimpleType<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>documentation</span><span class="ph token punctuation">&gt;</span></span>Confidence value (between 0 and 1)<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>documentation</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>attribute</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>complexType</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+                  </td>
+               </tr>
+            </tbody></table></div>
+   </div>
+   <article class="topic nested1" aria-labelledby="ariaid-title2" id="ReadingOrderType_conf">
+      <h2 class="title text-dark" id="ariaid-title2">Attribute pc:ReadingOrderType / @conf</h2>
+      <div class="body">
+         <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:10.714285714285714%"><col style="width:89.28571428571429%"></colgroup><tbody class="tbody">
+                  <tr>
+                     <td class="entry align-left">Namespace</td>
+                     <td class="entry align-left">No namespace</td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Annotations</td>
+                     <td class="entry align-left">
+                        <pre class="pre codeblock border rounded language-xml"><code>Confidence value (between 0 and 1)</code></pre>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Type</td>
+                     <td class="entry align-left">
+                        <a class="xref" href="pagecontent_xsd_Simple_Type_pc_ConfSimpleType.html#ConfSimpleType">Simple Type pc:ConfSimpleType</a>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Properties</td>
+                     <td class="entry align-left">
+                        <div class="p">
+                           <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:20%"><col style="width:80%"></colgroup><tbody class="tbody">
+                                    <tr>
+                                       <td class="entry align-left">content: </td>
+                                       <td class="entry align-left">
+                                          <strong class="ph b">simple</strong>
+                                       </td>
+                                    </tr>
+                                 </tbody></table></div>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Facets</td>
+                     <td class="entry align-left">
+                        <div class="p">
+                           <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:20%"><col style="width:30%"><col style="width:50%"></colgroup><tbody class="tbody">
+                                    <tr>
+                                       <td class="entry align-left">maxInclusive</td>
+                                       <td class="entry align-left">1</td>
+                                       <td class="entry align-left"></td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left">minInclusive</td>
+                                       <td class="entry align-left">0</td>
+                                       <td class="entry align-left"></td>
+                                    </tr>
+                                 </tbody></table></div>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Used by</td>
+                     <td class="entry align-left">
+                        <div class="p">
+                           <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:20%"><col style="width:80%"></colgroup><tbody class="tbody">
+                                    <tr>
+                                       <td class="entry align-left">Complex Type </td>
+                                       <td class="entry align-left">
+                                          <a class="xref" href="#ReadingOrderType">Complex Type pc:ReadingOrderType</a>
+                                       </td>
+                                    </tr>
+                                 </tbody></table></div>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Source</td>
+                     <td class="entry align-left">
+                        <pre class="pre codeblock border rounded language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>attribute</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>conf<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>pc:ConfSimpleType<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>documentation</span><span class="ph token punctuation">&gt;</span></span>Confidence value (between 0 and 1)<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>documentation</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>attribute</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+                     </td>
+                  </tr>
+               </tbody></table></div>
+      </div>
+   </article>
+   <article class="topic nested1" aria-labelledby="ariaid-title3" id="ReadingOrderType_OrderedGroup">
+      <h2 class="title text-dark" id="ariaid-title3">Element pc:ReadingOrderType / pc:OrderedGroup</h2>
+      <div class="body">
+         <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:10.714285714285714%"><col style="width:89.28571428571429%"></colgroup><tbody class="tbody">
+                  <tr>
+                     <td class="entry align-left">Namespace</td>
+                     <td class="entry align-left">http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15</td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Diagram</td>
+                     <td class="entry align-left">
+                        <div class="p">
+                           <figure class="fig imagemap figure w-100 mw-100 p-3" id="ReadingOrderType_OrderedGroup__pagecontent_xsd_Element_pc_OrderedGroup">
+                              <img class="image figure-img img-fluid border rounded" src="img/pagecontent_xsd_Element_pc_OrderedGroup.jpeg">
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">456,153,605,239</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_id">Attribute pc:OrderedGroupType / @id</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">456,259,651,345</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_regionRef">Attribute pc:OrderedGroupType / @regionRef</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">456,493,635,579</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_caption">Attribute pc:OrderedGroupType / @caption</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">456,599,836,685</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_type">Attribute pc:OrderedGroupType / @type</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">456,705,671,791</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_continuation">Attribute pc:OrderedGroupType / @continuation</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">456,913,635,999</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_custom">Attribute pc:OrderedGroupType / @custom</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">456,1069,656,1155</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_comments">Attribute pc:OrderedGroupType / @comments</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">611,1189,937,1275</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_UserDefined">Element pc:OrderedGroupType / pc:UserDefined</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">611,1295,879,1381</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_Labels">Element pc:OrderedGroupType / pc:Labels</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">753,1451,1137,1537</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_RegionRefIndexed">Element pc:OrderedGroupType / pc:RegionRefIndexed</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">753,1557,1172,1643</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_OrderedGroupIndexed">Element pc:OrderedGroupType / pc:OrderedGroupIndexed</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">753,1663,1195,1749</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_UnorderedGroupIndexed">Element pc:OrderedGroupType / pc:UnorderedGroupIndexed</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">406,6,725,50</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType">Complex Type pc:OrderedGroupType</a>
+                              </div>
+                           </figure>
+
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Type</td>
+                     <td class="entry align-left">
+                        <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType">Complex Type pc:OrderedGroupType</a>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Properties</td>
+                     <td class="entry align-left">
+                        <div class="p">
+                           <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:20%"><col style="width:80%"></colgroup><tbody class="tbody">
+                                    <tr>
+                                       <td class="entry align-left">content: </td>
+                                       <td class="entry align-left">
+                                          <strong class="ph b">complex</strong>
+                                       </td>
+                                    </tr>
+                                 </tbody></table></div>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Model</td>
+                     <td class="entry align-left">
+                        <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_UserDefined">Element pc:OrderedGroupType / pc:UserDefined</a> , <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_Labels">Element pc:OrderedGroupType / pc:Labels</a> , (<a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_RegionRefIndexed">Element pc:OrderedGroupType / pc:RegionRefIndexed</a> | <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_OrderedGroupIndexed">Element pc:OrderedGroupType / pc:OrderedGroupIndexed</a> | <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_UnorderedGroupIndexed">Element pc:OrderedGroupType / pc:UnorderedGroupIndexed</a>)</td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Children</td>
+                     <td class="entry align-left">
+                        <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_Labels">Element pc:OrderedGroupType / pc:Labels</a>, <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_OrderedGroupIndexed">Element pc:OrderedGroupType / pc:OrderedGroupIndexed</a>, <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_RegionRefIndexed">Element pc:OrderedGroupType / pc:RegionRefIndexed</a>, <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_UnorderedGroupIndexed">Element pc:OrderedGroupType / pc:UnorderedGroupIndexed</a>, <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_UserDefined">Element pc:OrderedGroupType / pc:UserDefined</a>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Instance</td>
+                     <td class="entry align-left">
+                        <pre class="pre codeblock border rounded language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span><span class="ph token namespace">pc:</span>OrderedGroup</span> <span class="ph token attr-name">caption</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">comments</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">continuation</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">custom</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">id</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">regionRef</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name"><span class="ph token namespace">xmlns:</span>pc</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span><span class="ph token namespace">pc:</span>UserDefined</span><span class="ph token punctuation">&gt;</span></span>{0,1}<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span><span class="ph token namespace">pc:</span>UserDefined</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span><span class="ph token namespace">pc:</span>Labels</span> <span class="ph token attr-name">comments</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">externalId</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">externalModel</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">prefix</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>{0,unbounded}<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span><span class="ph token namespace">pc:</span>Labels</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span><span class="ph token namespace">pc:</span>RegionRefIndexed</span> <span class="ph token attr-name">index</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">regionRef</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>{1,1}<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span><span class="ph token namespace">pc:</span>RegionRefIndexed</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span><span class="ph token namespace">pc:</span>OrderedGroupIndexed</span> <span class="ph token attr-name">caption</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">comments</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">continuation</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">custom</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">id</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">index</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">regionRef</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>{1,1}<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span><span class="ph token namespace">pc:</span>OrderedGroupIndexed</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span><span class="ph token namespace">pc:</span>UnorderedGroupIndexed</span> <span class="ph token attr-name">caption</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">comments</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">continuation</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">custom</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">id</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">index</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">regionRef</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>{1,1}<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span><span class="ph token namespace">pc:</span>UnorderedGroupIndexed</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span><span class="ph token namespace">pc:</span>OrderedGroup</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Attributes</td>
+                     <td class="entry align-left">
+                        <div class="p">
+                           <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:42.857142857142854%"><col style="width:42.857142857142854%"><col style="width:14.285714285714285%"></colgroup><thead class="thead">
+                                    <tr>
+                                       <th class="entry align-left" id="ReadingOrderType_OrderedGroup__entry__19">QName</th>
+                                       <th class="entry align-left" id="ReadingOrderType_OrderedGroup__entry__20">Type</th>
+                                       <th class="entry align-left" id="ReadingOrderType_OrderedGroup__entry__21">Use</th>
+                                    </tr>
+                                 </thead><tbody class="tbody">
+                                    <tr>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__19">
+                                          <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_caption">Attribute pc:OrderedGroupType / @caption</a>
+                                       </td>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__20">string</td>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__21">optional</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__19">
+                                          <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_comments">Attribute pc:OrderedGroupType / @comments</a>
+                                       </td>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__20">string</td>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__21">optional</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__19">
+                                          <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_continuation">Attribute pc:OrderedGroupType / @continuation</a>
+                                       </td>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__20">boolean</td>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__21">optional</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__19 ReadingOrderType_OrderedGroup__entry__20 ReadingOrderType_OrderedGroup__entry__21" colspan="3">
+                                          <pre class="pre codeblock border rounded language-xml"><code>Is this group a continuation of another group
+(from previous column or page, for example)?</code></pre>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__19">
+                                          <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_custom">Attribute pc:OrderedGroupType / @custom</a>
+                                       </td>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__20">string</td>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__21">optional</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__19 ReadingOrderType_OrderedGroup__entry__20 ReadingOrderType_OrderedGroup__entry__21" colspan="3">
+                                          <pre class="pre codeblock border rounded language-xml"><code>For generic use</code></pre>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__19">
+                                          <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_id">Attribute pc:OrderedGroupType / @id</a>
+                                       </td>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__20">ID</td>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__21">required</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__19">
+                                          <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_regionRef">Attribute pc:OrderedGroupType / @regionRef</a>
+                                       </td>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__20">IDREF</td>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__21">optional</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__19 ReadingOrderType_OrderedGroup__entry__20 ReadingOrderType_OrderedGroup__entry__21" colspan="3">
+                                          <pre class="pre codeblock border rounded language-xml"><code>Optional link to a parent region of nested regions.
+The parent region doubles as reading order group.
+Only the nested regions should be allowed as group members.</code></pre>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__19">
+                                          <a class="xref" href="pagecontent_xsd_Complex_Type_pc_OrderedGroupType.html#OrderedGroupType_type">Attribute pc:OrderedGroupType / @type</a>
+                                       </td>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__20">
+                                          <a class="xref" href="pagecontent_xsd_Simple_Type_pc_GroupTypeSimpleType.html#GroupTypeSimpleType">Simple Type pc:GroupTypeSimpleType</a>
+                                       </td>
+                                       <td class="entry align-left" headers="ReadingOrderType_OrderedGroup__entry__21">optional</td>
+                                    </tr>
+                                 </tbody></table></div>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Source</td>
+                     <td class="entry align-left">
+                        <pre class="pre codeblock border rounded language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>element</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>OrderedGroup<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>pc:OrderedGroupType<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+                     </td>
+                  </tr>
+               </tbody></table></div>
+      </div>
+   </article>
+   <article class="topic nested1" aria-labelledby="ariaid-title4" id="ReadingOrderType_UnorderedGroup">
+      <h2 class="title text-dark" id="ariaid-title4">Element pc:ReadingOrderType / pc:UnorderedGroup</h2>
+      <div class="body">
+         <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:10.714285714285714%"><col style="width:89.28571428571429%"></colgroup><tbody class="tbody">
+                  <tr>
+                     <td class="entry align-left">Namespace</td>
+                     <td class="entry align-left">http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15</td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Diagram</td>
+                     <td class="entry align-left">
+                        <div class="p">
+                           <figure class="fig imagemap figure w-100 mw-100 p-3" id="ReadingOrderType_UnorderedGroup__pagecontent_xsd_Element_pc_UnorderedGroup_2">
+                              <img class="image figure-img img-fluid border rounded" src="img/pagecontent_xsd_Element_pc_UnorderedGroup_2.jpeg">
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">479,153,628,239</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_id">Attribute pc:UnorderedGroupType / @id</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">479,259,674,345</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#NO_NAMESPACE_UnorderedGroupType_regionRef">Attribute pc:UnorderedGroupType / @regionRef</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">479,493,658,579</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_caption">Attribute pc:UnorderedGroupType / @caption</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">479,599,859,685</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_type">Attribute pc:UnorderedGroupType / @type</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">479,705,694,791</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_continuation">Attribute pc:UnorderedGroupType / @continuation</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">479,913,658,999</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_custom">Attribute pc:UnorderedGroupType / @custom</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">479,1069,679,1155</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_comments">Attribute pc:UnorderedGroupType / @comments</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">634,1189,960,1275</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_UserDefined">Element pc:UnorderedGroupType / pc:UserDefined</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">634,1295,902,1381</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_Labels">Element pc:UnorderedGroupType / pc:Labels</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">776,1451,1085,1537</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_RegionRef">Element pc:UnorderedGroupType / pc:RegionRef</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">776,1557,1120,1643</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_OrderedGroup">Element pc:UnorderedGroupType / pc:OrderedGroup</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">776,1663,1143,1749</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_UnorderedGroup">Element pc:UnorderedGroupType / pc:UnorderedGroup</a>
+                              </div>
+                              <div class="figgroup area">
+                                 <span class="keyword shape">rect</span>
+                                 <span class="ph coords">429,6,771,50</span>
+                                 <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType">Complex Type pc:UnorderedGroupType</a>
+                              </div>
+                           </figure>
+
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Type</td>
+                     <td class="entry align-left">
+                        <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType">Complex Type pc:UnorderedGroupType</a>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Properties</td>
+                     <td class="entry align-left">
+                        <div class="p">
+                           <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:20%"><col style="width:80%"></colgroup><tbody class="tbody">
+                                    <tr>
+                                       <td class="entry align-left">content: </td>
+                                       <td class="entry align-left">
+                                          <strong class="ph b">complex</strong>
+                                       </td>
+                                    </tr>
+                                 </tbody></table></div>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Model</td>
+                     <td class="entry align-left">
+                        <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_UserDefined">Element pc:UnorderedGroupType / pc:UserDefined</a> , <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_Labels">Element pc:UnorderedGroupType / pc:Labels</a> , (<a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_RegionRef">Element pc:UnorderedGroupType / pc:RegionRef</a> | <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_OrderedGroup">Element pc:UnorderedGroupType / pc:OrderedGroup</a> | <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_UnorderedGroup">Element pc:UnorderedGroupType / pc:UnorderedGroup</a>)</td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Children</td>
+                     <td class="entry align-left">
+                        <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_Labels">Element pc:UnorderedGroupType / pc:Labels</a>, <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_OrderedGroup">Element pc:UnorderedGroupType / pc:OrderedGroup</a>, <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_RegionRef">Element pc:UnorderedGroupType / pc:RegionRef</a>, <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_UnorderedGroup">Element pc:UnorderedGroupType / pc:UnorderedGroup</a>, <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_UserDefined">Element pc:UnorderedGroupType / pc:UserDefined</a>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Instance</td>
+                     <td class="entry align-left">
+                        <pre class="pre codeblock border rounded language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span><span class="ph token namespace">pc:</span>UnorderedGroup</span> <span class="ph token attr-name">caption</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">comments</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">continuation</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">custom</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">id</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">regionRef</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name"><span class="ph token namespace">xmlns:</span>pc</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span><span class="ph token namespace">pc:</span>UserDefined</span><span class="ph token punctuation">&gt;</span></span>{0,1}<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span><span class="ph token namespace">pc:</span>UserDefined</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span><span class="ph token namespace">pc:</span>Labels</span> <span class="ph token attr-name">comments</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">externalId</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">externalModel</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">prefix</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>{0,unbounded}<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span><span class="ph token namespace">pc:</span>Labels</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span><span class="ph token namespace">pc:</span>RegionRef</span> <span class="ph token attr-name">regionRef</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>{1,1}<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span><span class="ph token namespace">pc:</span>RegionRef</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span><span class="ph token namespace">pc:</span>OrderedGroup</span> <span class="ph token attr-name">caption</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">comments</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">continuation</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">custom</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">id</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">regionRef</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>{1,1}<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span><span class="ph token namespace">pc:</span>OrderedGroup</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span><span class="ph token namespace">pc:</span>UnorderedGroup</span> <span class="ph token attr-name">caption</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">comments</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">continuation</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">custom</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">id</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">regionRef</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span><span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>{1,1}<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span><span class="ph token namespace">pc:</span>UnorderedGroup</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span><span class="ph token namespace">pc:</span>UnorderedGroup</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Attributes</td>
+                     <td class="entry align-left">
+                        <div class="p">
+                           <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:42.857142857142854%"><col style="width:42.857142857142854%"><col style="width:14.285714285714285%"></colgroup><thead class="thead">
+                                    <tr>
+                                       <th class="entry align-left" id="ReadingOrderType_UnorderedGroup__entry__19">QName</th>
+                                       <th class="entry align-left" id="ReadingOrderType_UnorderedGroup__entry__20">Type</th>
+                                       <th class="entry align-left" id="ReadingOrderType_UnorderedGroup__entry__21">Use</th>
+                                    </tr>
+                                 </thead><tbody class="tbody">
+                                    <tr>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__19">
+                                          <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_caption">Attribute pc:UnorderedGroupType / @caption</a>
+                                       </td>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__20">string</td>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__21">optional</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__19">
+                                          <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_comments">Attribute pc:UnorderedGroupType / @comments</a>
+                                       </td>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__20">string</td>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__21">optional</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__19">
+                                          <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_continuation">Attribute pc:UnorderedGroupType / @continuation</a>
+                                       </td>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__20">boolean</td>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__21">optional</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__19 ReadingOrderType_UnorderedGroup__entry__20 ReadingOrderType_UnorderedGroup__entry__21" colspan="3">
+                                          <pre class="pre codeblock border rounded language-xml"><code>Is this group a continuation of another group
+(from previous column or page, for example)?</code></pre>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__19">
+                                          <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_custom">Attribute pc:UnorderedGroupType / @custom</a>
+                                       </td>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__20">string</td>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__21">optional</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__19 ReadingOrderType_UnorderedGroup__entry__20 ReadingOrderType_UnorderedGroup__entry__21" colspan="3">
+                                          <pre class="pre codeblock border rounded language-xml"><code>For generic use</code></pre>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__19">
+                                          <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_id">Attribute pc:UnorderedGroupType / @id</a>
+                                       </td>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__20">ID</td>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__21">required</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__19">
+                                          <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#NO_NAMESPACE_UnorderedGroupType_regionRef">Attribute pc:UnorderedGroupType / @regionRef</a>
+                                       </td>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__20">IDREF</td>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__21">optional</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__19 ReadingOrderType_UnorderedGroup__entry__20 ReadingOrderType_UnorderedGroup__entry__21" colspan="3">
+                                          <pre class="pre codeblock border rounded language-xml"><code>Optional link to a parent region of nested regions.
+The parent region doubles as reading order group.
+Only the nested regions should be allowed as group members.</code></pre>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__19">
+                                          <a class="xref" href="pagecontent_xsd_Complex_Type_pc_UnorderedGroupType.html#UnorderedGroupType_type">Attribute pc:UnorderedGroupType / @type</a>
+                                       </td>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__20">
+                                          <a class="xref" href="pagecontent_xsd_Simple_Type_pc_GroupTypeSimpleType.html#GroupTypeSimpleType">Simple Type pc:GroupTypeSimpleType</a>
+                                       </td>
+                                       <td class="entry align-left" headers="ReadingOrderType_UnorderedGroup__entry__21">optional</td>
+                                    </tr>
+                                 </tbody></table></div>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="entry align-left">Source</td>
+                     <td class="entry align-left">
+                        <pre class="pre codeblock border rounded language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>element</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>UnorderedGroup<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>pc:UnorderedGroupType<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+                     </td>
+                  </tr>
+               </tbody></table></div>
+      </div>
+   </article>
+</article></main></div><script language="javascript">//
+          
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+              return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+              return new bootstrap.Popover(popoverTriggerEl)
+            })
+         // 
+        </script><footer role="contentinfo"><div class="footer">
+
+ <details>
+  <summary>Published by DTA.</summary>
+  <p>Alle Inhalte dieser Seite unterstehen, soweit nicht anders gekennzeichnet, der Lizenz CC BY-SA 3.0 DE.
+    Weitere Informationen finden Sie im Impressum sowie in unseren Hinweisen zum Datenschutz.</p>
+
+<p>Zitierempfehlung: "Konvertierung in das DTA-Basisformat, hrsg. v. d. Berlin-Brandenburgischen Akademie der Wissenschaften.
+&lt;http://deutschestextarchiv.de&gt;.".</p>
+
+<p>2011–2023 Deutsches Textarchiv, Zentrum Sprache der Berlin-Brandenburgischen Akademie der Wissenschaften
+Kontakt: redaktion@deutschestextarchiv.de</p>
+</details> 
+</div></footer></body></html>

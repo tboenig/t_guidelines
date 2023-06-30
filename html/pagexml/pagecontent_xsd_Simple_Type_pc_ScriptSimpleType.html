@@ -1,0 +1,1232 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2023"><meta name="generator" content="DITA-OT"><title>Simple Type pc:ScriptSimpleType</title><script src="../js/lunr-client.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><link rel="shortcut icon" href="../favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="../css/common-extended.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous"></head><body id="ScriptSimpleType"><div class="visually-hidden-focusable overflow-hidden p-2 bg-light"><div class="container-xl"><a class="d-inline-flex m-1 btn btn-outline-primary btn-sm" href="#ariaid-title1">Zum Hauptinhalt springen</a><a href="#bs-sidebar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Zur Dokumentennavigation springen</a></div></div><div class="bs-header"><header role="banner"><nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <!-- This shows the menu on mobile -->
+    <div class="bd-navbar-toggle">
+      <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar" aria-controls="bdSidebar" aria-label="Toggle docs navigation">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+    <a class="navbar-brand" href="/">
+      <img src="../resources/ocrd.png" class="logo" alt="Logo OCR-D" height="48px"> Ground Truth Richtlinien
+    </a>
+    <button class="navbar-toggler py-2 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-three-dots"></i>
+    </button>
+    
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">📢 GT-Level</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📑 Transkription</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📰 Layout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📓 Struktur-GT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📓 GT-labelling</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📓 PAGE Format</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">📚 Page Addon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">❓ FAQ</a>
+          </li>
+        </ul>
+</div>
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item d-flex align-items-center">
+        <span class="nav-link py-2 pe-2"><i class="bi bi-search"></i></span>
+        <form class="bd-search position-relative me-auto" onsubmit="return search(this);">
+          <input id="search-input" type="search" dir="auto" class="form-control ds-input" placeholder="Search…" aria-label="Search for…" style="position: relative; vertical-align: top;">
+        </form>
+      </li>
+    </ul>
+</div>
+</nav></header></div><div class="bs-container" id="content"><nav role="navigation" id="bs-sidebar-nav" class="flex-column bd-links"><ul class="list-unstyled mb-0 py-3 pt-md-1"><li><div class="d-flex flex-row" id="menu-collapse-trigger-d355944e52"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d355944e52" aria-labelledby="menu-collapse-trigger-d355944e52" aria-controls="menu-collapse-d355944e52"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/index.html">Die Ground Truth Richtlinien</a></div><div id="menu-collapse-d355944e52" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trDokuKonventionen.html">Konventionen für diese Richtlinien</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/ground_truth_typ.html">Ground-Truth-Typ</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trLevels.html">📢 Übersicht der Ground-Truth-Level</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d355944e217"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d355944e217" aria-labelledby="menu-collapse-trigger-d355944e217" aria-controls="menu-collapse-d355944e217"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/transkription.html">📑 Transkription</a></div><div id="menu-collapse-d355944e217" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_4.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_2.html">Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_3_1.html">Level 3</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d355944e380"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d355944e380" aria-labelledby="menu-collapse-trigger-d355944e380" aria-controls="menu-collapse-d355944e380"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trGrundsaetze.html">Grundsätzliches zur Transkription</a></div><div id="menu-collapse-d355944e380" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_1_4.html">Wie im Level 1 transkribieren</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_2_4.html">Wie im Level 2 transkribieren</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_3_4.html">Wie im Level 3 transkribieren</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/sprache.html">Sprache</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d355944e580"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d355944e580" aria-labelledby="menu-collapse-trigger-d355944e580" aria-controls="menu-collapse-d355944e580"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSchreibweisen.html">Schreibweisen und Sonderzeichen</a></div><div id="menu-collapse-d355944e580" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row" id="menu-collapse-trigger-d355944e620"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d355944e620" aria-labelledby="menu-collapse-trigger-d355944e620" aria-controls="menu-collapse-d355944e620"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSchreibungIJ.html">Unterscheidung von I und J</a></div><div id="menu-collapse-d355944e620" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_2.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_und_3.html">Level 2 und 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d355944e743"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d355944e743" aria-labelledby="menu-collapse-trigger-d355944e743" aria-controls="menu-collapse-d355944e743"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSchreibungUV.html">Unterscheidung von u/f, u/v und v/u</a></div><div id="menu-collapse-d355944e743" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_3.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_und_3_0.html">Level 2 und 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d355944e863"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d355944e863" aria-labelledby="menu-collapse-trigger-d355944e863" aria-controls="menu-collapse-d355944e863"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSchreibungS.html">s-Grapheme</a></div><div id="menu-collapse-d355944e863" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_5.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_und_3_1.html">Level 2 und 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d355944e983"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d355944e983" aria-labelledby="menu-collapse-trigger-d355944e983" aria-controls="menu-collapse-d355944e983"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSchreibungR.html">r-Grapheme</a></div><div id="menu-collapse-d355944e983" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_6.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_und_3_2.html">Level 2 und 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d355944e1103"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d355944e1103" aria-labelledby="menu-collapse-trigger-d355944e1103" aria-controls="menu-collapse-d355944e1103"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trLigatur.html">Ligaturen</a></div><div id="menu-collapse-d355944e1103" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_1.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_2.html">Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_3.html">Level 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d355944e1263"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d355944e1263" aria-labelledby="menu-collapse-trigger-d355944e1263" aria-controls="menu-collapse-d355944e1263"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trUmlaute.html">Umlaute</a></div><div id="menu-collapse-d355944e1263" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_1_7.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_2_und_3_3.html">Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/level_3_2.html">Level 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d355944e1423"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d355944e1423" aria-labelledby="menu-collapse-trigger-d355944e1423" aria-controls="menu-collapse-d355944e1423"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trNasalstrich.html">Kürzungsstriche</a></div><div id="menu-collapse-d355944e1423" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_nasal_level_1.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_nasal_level_2.html">Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_nasal_level_3.html">Level 3</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d355944e1586"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d355944e1586" aria-labelledby="menu-collapse-trigger-d355944e1586" aria-controls="menu-collapse-d355944e1586"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trDiakritika.html">Diakritika</a></div><div id="menu-collapse-d355944e1586" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_dia_level_1_0.html">Level 1</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_dia_level_2_0.html">Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_dia_level_3_0.html">Level 3</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trSilbentrennung.html">Silbentrennung</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d355944e1786"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d355944e1786" aria-labelledby="menu-collapse-trigger-d355944e1786" aria-controls="menu-collapse-d355944e1786"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trSonderzeichen.html">Zahlen</a></div><div id="menu-collapse-d355944e1786" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trBruch.html">Brüche</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trRom.html">Römische Zahlen</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trHochgestellteZahl.html">Hochgestellte Zahlen</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trtiefgestellteZahl.html">Tiefgestellte Zahlen</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d355944e1986"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d355944e1986" aria-labelledby="menu-collapse-trigger-d355944e1986" aria-controls="menu-collapse-d355944e1986"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trTabellen.html">Tabellen</a></div><div id="menu-collapse-d355944e1986" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenTyp.html">Tabellen Typen</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenLevel1.html">Tabelle Level 1 sparse text</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenLevel2.html">Tabelle Level 2 table detection</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenLevel3.html">Tabelle Level 3 table structure</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenLevel4.html">Tabelle Level 4 full table structure</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d355944e2234"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d355944e2234" aria-labelledby="menu-collapse-trigger-d355944e2234" aria-controls="menu-collapse-d355944e2234"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trTabellenWerkzeuge.html">Erstellung von Tabellen</a></div><div id="menu-collapse-d355944e2234" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellen_Aletheia.html">Tabellen mit Aletheia erstellen</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenTranskribus.html">Tabellen mit Transkribus</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d355944e2356"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d355944e2356" aria-labelledby="menu-collapse-trigger-d355944e2356" aria-controls="menu-collapse-d355944e2356"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trTabellenFormat.html">Tabellen Formate</a></div><div id="menu-collapse-d355944e2356" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellen_Page.html">Tabellen in PAGE</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellen_TranskribusPage.html">Tabellen in Transkribus Page</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellen_ALTO.html">Tabellen in ALTO</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trTabellenLabelling.html">GT-Metadaten für Tabellen</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trHandschrift.html">Handschriftliche Anmerkungen</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d355944e2596"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d355944e2596" aria-labelledby="menu-collapse-trigger-d355944e2596" aria-controls="menu-collapse-d355944e2596"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trZeichensetzung.html">Zeichensetzung Grundregeln</a></div><div id="menu-collapse-d355944e2596" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trGedankenstrich.html">Striche : Gedankenstrich</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trAnfZeichen.html">Anführungszeichen</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d355944e2716"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d355944e2716" aria-labelledby="menu-collapse-trigger-d355944e2716" aria-controls="menu-collapse-d355944e2716"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/leerzeichen.html">Leerzeichen</a></div><div id="menu-collapse-d355944e2716" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_1_3.html">Level 1 und Level 2</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_level_2_3.html">Level 3</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/tr_compareLevel1_3.html">Vergleich zwischen Level 1, 2 und Level 3</a></div></li></ul></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trErsetzungen.html">Ersetzungen</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d355944e2917"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0" data-bs-target="#menu-collapse-d355944e2917" aria-labelledby="menu-collapse-trigger-d355944e2917" aria-controls="menu-collapse-d355944e2917"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../trans/trBeispiele.html">Übersichten und Beispiele von Alphabeten, Kürzungs-, Sonderzeichen und Ligaturen.</a></div><div id="menu-collapse-d355944e2917" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/ocr_d_koordinationsgremium_codierung.html">OCR-D Koordinationsgremium Kodierung</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trFremdsprache.html">Alphabete, Kürzungs- und Sonderzeichen</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../trans/trLigaturen2.html">Ligaturen</a></div></li></ul></div></li></ul></div></li></ul></nav><main role="main" class="container bs-main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="title text-dark" id="ariaid-title1">Simple Type pc:ScriptSimpleType</h1>
+   <div class="body">
+      <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:10.714285714285714%"><col style="width:89.28571428571429%"></colgroup><tbody class="tbody">
+               <tr>
+                  <td class="entry align-left">Namespace</td>
+                  <td class="entry align-left">http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15</td>
+               </tr>
+               <tr>
+                  <td class="entry align-left">Annotations</td>
+                  <td class="entry align-left">
+                     <pre class="pre codeblock border rounded language-xml"><code>iso15924 2016-07-14</code></pre>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="entry align-left">Diagram</td>
+                  <td class="entry align-left">
+                     <p class="p"></p>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="entry align-left">Type</td>
+                  <td class="entry align-left">restriction of string</td>
+               </tr>
+               <tr>
+                  <td class="entry align-left">Facets</td>
+                  <td class="entry align-left">
+                     <div class="p">
+                        <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:20%"><col style="width:30%"><col style="width:50%"></colgroup><tbody class="tbody">
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Adlm - Adlam</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Afak - Afaka</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Aghb - Caucasian Albanian</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Ahom - Ahom, Tai Ahom</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Arab - Arabic</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Aran - Arabic (Nastaliq variant)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Armi - Imperial Aramaic</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Armn - Armenian</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Avst - Avestan</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Bali - Balinese</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Bamu - Bamum</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Bass - Bassa Vah</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Batk - Batak</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Beng - Bengali</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Bhks - Bhaiksuki</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Blis - Blissymbols</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Bopo - Bopomofo</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Brah - Brahmi</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Brai - Braille</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Bugi - Buginese</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Buhd - Buhid</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Cakm - Chakma</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Cans - Unified Canadian Aboriginal Syllabics</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Cari - Carian</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Cham - Cham</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Cher - Cherokee</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Cirt - Cirth</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Copt - Coptic</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Cprt - Cypriot</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Cyrl - Cyrillic</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Cyrs - Cyrillic (Old Church Slavonic variant)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Deva - Devanagari (Nagari)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Dsrt - Deseret (Mormon)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Dupl - Duployan shorthand, Duployan stenography</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Egyd - Egyptian demotic</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Egyh - Egyptian hieratic</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Egyp - Egyptian hieroglyphs</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Elba - Elbasan</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Ethi - Ethiopic</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Geok - Khutsuri (Asomtavruli and Nuskhuri)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Geor - Georgian (Mkhedruli)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Glag - Glagolitic</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Goth - Gothic</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Gran - Grantha</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Grek - Greek</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Gujr - Gujarati</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Guru - Gurmukhi</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Hanb - Han with Bopomofo</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Hang - Hangul</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Hani - Han (Hanzi, Kanji, Hanja)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Hano - Hanunoo (Hanunóo)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Hans - Han (Simplified variant)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Hant - Han (Traditional variant)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Hatr - Hatran</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Hebr - Hebrew</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Hira - Hiragana</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Hluw - Anatolian Hieroglyphs</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Hmng - Pahawh Hmong</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Hrkt - Japanese syllabaries</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Hung - Old Hungarian (Hungarian Runic)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Inds - Indus (Harappan)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Ital - Old Italic (Etruscan, Oscan etc.)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Jamo - Jamo</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Java - Javanese</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Jpan - Japanese</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Jurc - Jurchen</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Kali - Kayah Li</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Kana - Katakana</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Khar - Kharoshthi</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Khmr - Khmer</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Khoj - Khojki</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Kitl - Khitan large script</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Kits - Khitan small script</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Knda - Kannada</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Kore - Korean (alias for Hangul + Han)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Kpel - Kpelle</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Kthi - Kaithi</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Lana - Tai Tham (Lanna)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Laoo - Lao</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Latf - Latin (Fraktur variant)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Latg - Latin (Gaelic variant)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Latn - Latin</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Leke - Leke</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Lepc - Lepcha (Róng)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Limb - Limbu</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Lina - Linear A</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Linb - Linear B</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Lisu - Lisu (Fraser)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Loma - Loma</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Lyci - Lycian</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Lydi - Lydian</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Mahj - Mahajani</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Mand - Mandaic, Mandaean</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Mani - Manichaean</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Marc - Marchen</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Maya - Mayan hieroglyphs</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Mend - Mende Kikakui</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Merc - Meroitic Cursive</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Mero - Meroitic Hieroglyphs</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Mlym - Malayalam</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Modi - Modi, Moḍī</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Mong - Mongolian</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Moon - Moon (Moon code, Moon script, Moon type)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Mroo - Mro, Mru</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Mtei - Meitei Mayek (Meithei, Meetei)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Mult - Multani</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Mymr - Myanmar (Burmese)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Narb - Old North Arabian (Ancient North Arabian)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Nbat - Nabataean</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Newa - Newa, Newar, Newari</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Nkgb - Nakhi Geba</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Nkoo - N’Ko</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Nshu - Nüshu</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Ogam - Ogham</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Olck - Ol Chiki (Ol Cemet’, Ol, Santali)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Orkh - Old Turkic, Orkhon Runic</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Orya - Oriya</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Osge - Osage</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Osma - Osmanya</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Palm - Palmyrene</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Pauc - Pau Cin Hau</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Perm - Old Permic</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Phag - Phags-pa</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Phli - Inscriptional Pahlavi</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Phlp - Psalter Pahlavi</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Phlv - Book Pahlavi</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Phnx - Phoenician</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Piqd - Klingon (KLI pIqaD)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Plrd - Miao (Pollard)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Prti - Inscriptional Parthian</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Rjng - Rejang (Redjang, Kaganga)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Roro - Rongorongo</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Runr - Runic</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Samr - Samaritan</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Sara - Sarati</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Sarb - Old South Arabian</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Saur - Saurashtra</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Sgnw - SignWriting</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Shaw - Shavian (Shaw)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Shrd - Sharada, Śāradā</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Sidd - Siddham</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Sind - Khudawadi, Sindhi</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Sinh - Sinhala</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Sora - Sora Sompeng</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Sund - Sundanese</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Sylo - Syloti Nagri</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Syrc - Syriac</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Syre - Syriac (Estrangelo variant)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Syrj - Syriac (Western variant)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Syrn - Syriac (Eastern variant)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Tagb - Tagbanwa</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Takr - Takri</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Tale - Tai Le</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Talu - New Tai Lue</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Taml - Tamil</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Tang - Tangut</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Tavt - Tai Viet</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Telu - Telugu</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Teng - Tengwar</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Tfng - Tifinagh (Berber)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Tglg - Tagalog (Baybayin, Alibata)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Thaa - Thaana</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Thai - Thai</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Tibt - Tibetan</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Tirh - Tirhuta</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Ugar - Ugaritic</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Vaii - Vai</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Visp - Visible Speech</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Wara - Warang Citi (Varang Kshiti)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Wole - Woleai</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Xpeo - Old Persian</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Xsux - Cuneiform, Sumero-Akkadian</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Yiii - Yi</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Zinh - Code for inherited script</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Zmth - Mathematical notation</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Zsye - Symbols (Emoji variant)</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Zsym - Symbols</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Zxxx - Code for unwritten documents</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Zyyy - Code for undetermined script</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">Zzzz - Code for uncoded script</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="entry align-left">enumeration</td>
+                                    <td class="entry align-left">other</td>
+                                    <td class="entry align-left"></td>
+                                 </tr>
+                              </tbody></table></div>
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="entry align-left">Used by</td>
+                  <td class="entry align-left">
+                     <div class="p">
+                        <div class="border pt-3 ps-3 pe-3"><table class="table table-bordered"><colgroup><col style="width:20%"><col style="width:80%"></colgroup><tbody class="tbody">
+                                 <tr>
+                                    <td class="entry align-left">Attributes </td>
+                                    <td class="entry align-left">
+                                       <a class="xref" href="pagecontent_xsd_Complex_Type_pc_GlyphType.html#GlyphType_script">Attribute pc:GlyphType / @script</a>, <a class="xref" href="pagecontent_xsd_Complex_Type_pc_PageType.html#PageType_primaryScript">Attribute pc:PageType / @primaryScript</a>, <a class="xref" href="pagecontent_xsd_Complex_Type_pc_PageType.html#PageType_secondaryScript">Attribute pc:PageType / @secondaryScript</a>, <a class="xref" href="pagecontent_xsd_Complex_Type_pc_TextLineType.html#TextLineType_primaryScript">Attribute pc:TextLineType / @primaryScript</a>, <a class="xref" href="pagecontent_xsd_Complex_Type_pc_TextLineType.html#TextLineType_secondaryScript">Attribute pc:TextLineType / @secondaryScript</a>, <a class="xref" href="pagecontent_xsd_Complex_Type_pc_TextRegionType.html#TextRegionType_primaryScript">Attribute pc:TextRegionType / @primaryScript</a>, <a class="xref" href="pagecontent_xsd_Complex_Type_pc_TextRegionType.html#TextRegionType_secondaryScript">Attribute pc:TextRegionType / @secondaryScript</a>, <a class="xref" href="pagecontent_xsd_Complex_Type_pc_WordType.html#WordType_primaryScript">Attribute pc:WordType / @primaryScript</a>, <a class="xref" href="pagecontent_xsd_Complex_Type_pc_WordType.html#WordType_secondaryScript">Attribute pc:WordType / @secondaryScript</a>
+                                    </td>
+                                 </tr>
+                              </tbody></table></div>
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="entry align-left">Source</td>
+                  <td class="entry align-left">
+                     <pre class="pre codeblock border rounded language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>simpleType</span> <span class="ph token attr-name">name</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>ScriptSimpleType<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>documentation</span><span class="ph token punctuation">&gt;</span></span>iso15924 2016-07-14<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>documentation</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>annotation</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>restriction</span> <span class="ph token attr-name">base</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>string<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Adlm - Adlam<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Afak - Afaka<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Aghb - Caucasian Albanian<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Ahom - Ahom, Tai Ahom<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Arab - Arabic<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Aran - Arabic (Nastaliq variant)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Armi - Imperial Aramaic<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Armn - Armenian<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Avst - Avestan<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Bali - Balinese<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Bamu - Bamum<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Bass - Bassa Vah<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Batk - Batak<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Beng - Bengali<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Bhks - Bhaiksuki<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Blis - Blissymbols<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Bopo - Bopomofo<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Brah - Brahmi<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Brai - Braille<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Bugi - Buginese<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Buhd - Buhid<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Cakm - Chakma<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Cans - Unified Canadian Aboriginal Syllabics<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Cari - Carian<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Cham - Cham<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Cher - Cherokee<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Cirt - Cirth<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Copt - Coptic<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Cprt - Cypriot<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Cyrl - Cyrillic<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Cyrs - Cyrillic (Old Church Slavonic variant)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Deva - Devanagari (Nagari)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Dsrt - Deseret (Mormon)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Dupl - Duployan shorthand, Duployan stenography<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Egyd - Egyptian demotic<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Egyh - Egyptian hieratic<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Egyp - Egyptian hieroglyphs<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Elba - Elbasan<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Ethi - Ethiopic<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Geok - Khutsuri (Asomtavruli and Nuskhuri)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Geor - Georgian (Mkhedruli)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Glag - Glagolitic<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Goth - Gothic<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Gran - Grantha<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Grek - Greek<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Gujr - Gujarati<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Guru - Gurmukhi<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Hanb - Han with Bopomofo<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Hang - Hangul<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Hani - Han (Hanzi, Kanji, Hanja)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Hano - Hanunoo (Hanunóo)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Hans - Han (Simplified variant)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Hant - Han (Traditional variant)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Hatr - Hatran<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Hebr - Hebrew<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Hira - Hiragana<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Hluw - Anatolian Hieroglyphs<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Hmng - Pahawh Hmong<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Hrkt - Japanese syllabaries<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Hung - Old Hungarian (Hungarian Runic)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Inds - Indus (Harappan)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Ital - Old Italic (Etruscan, Oscan etc.)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Jamo - Jamo<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Java - Javanese<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Jpan - Japanese<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Jurc - Jurchen<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Kali - Kayah Li<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Kana - Katakana<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Khar - Kharoshthi<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Khmr - Khmer<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Khoj - Khojki<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Kitl - Khitan large script<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Kits - Khitan small script<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Knda - Kannada<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Kore - Korean (alias for Hangul + Han)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Kpel - Kpelle<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Kthi - Kaithi<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Lana - Tai Tham (Lanna)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Laoo - Lao<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Latf - Latin (Fraktur variant)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Latg - Latin (Gaelic variant)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Latn - Latin<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Leke - Leke<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Lepc - Lepcha (Róng)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Limb - Limbu<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Lina - Linear A<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Linb - Linear B<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Lisu - Lisu (Fraser)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Loma - Loma<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Lyci - Lycian<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Lydi - Lydian<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Mahj - Mahajani<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Mand - Mandaic, Mandaean<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Mani - Manichaean<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Marc - Marchen<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Maya - Mayan hieroglyphs<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Mend - Mende Kikakui<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Merc - Meroitic Cursive<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Mero - Meroitic Hieroglyphs<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Mlym - Malayalam<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Modi - Modi, Moḍī<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Mong - Mongolian<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Moon - Moon (Moon code, Moon script, Moon type)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Mroo - Mro, Mru<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Mtei - Meitei Mayek (Meithei, Meetei)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Mult - Multani<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Mymr - Myanmar (Burmese)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Narb - Old North Arabian (Ancient North Arabian)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Nbat - Nabataean<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Newa - Newa, Newar, Newari<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Nkgb - Nakhi Geba<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Nkoo - N’Ko<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Nshu - Nüshu<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Ogam - Ogham<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Olck - Ol Chiki (Ol Cemet’, Ol, Santali)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Orkh - Old Turkic, Orkhon Runic<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Orya - Oriya<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Osge - Osage<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Osma - Osmanya<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Palm - Palmyrene<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Pauc - Pau Cin Hau<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Perm - Old Permic<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Phag - Phags-pa<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Phli - Inscriptional Pahlavi<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Phlp - Psalter Pahlavi<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Phlv - Book Pahlavi<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Phnx - Phoenician<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Piqd - Klingon (KLI pIqaD)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Plrd - Miao (Pollard)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Prti - Inscriptional Parthian<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Rjng - Rejang (Redjang, Kaganga)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Roro - Rongorongo<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Runr - Runic<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Samr - Samaritan<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Sara - Sarati<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Sarb - Old South Arabian<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Saur - Saurashtra<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Sgnw - SignWriting<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Shaw - Shavian (Shaw)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Shrd - Sharada, Śāradā<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Sidd - Siddham<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Sind - Khudawadi, Sindhi<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Sinh - Sinhala<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Sora - Sora Sompeng<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Sund - Sundanese<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Sylo - Syloti Nagri<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Syrc - Syriac<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Syre - Syriac (Estrangelo variant)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Syrj - Syriac (Western variant)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Syrn - Syriac (Eastern variant)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Tagb - Tagbanwa<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Takr - Takri<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Tale - Tai Le<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Talu - New Tai Lue<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Taml - Tamil<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Tang - Tangut<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Tavt - Tai Viet<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Telu - Telugu<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Teng - Tengwar<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Tfng - Tifinagh (Berber)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Tglg - Tagalog (Baybayin, Alibata)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Thaa - Thaana<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Thai - Thai<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Tibt - Tibetan<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Tirh - Tirhuta<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Ugar - Ugaritic<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Vaii - Vai<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Visp - Visible Speech<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Wara - Warang Citi (Varang Kshiti)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Wole - Woleai<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Xpeo - Old Persian<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Xsux - Cuneiform, Sumero-Akkadian<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Yiii - Yi<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Zinh - Code for inherited script<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Zmth - Mathematical notation<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Zsye - Symbols (Emoji variant)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Zsym - Symbols<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Zxxx - Code for unwritten documents<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Zyyy - Code for undetermined script<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>Zzzz - Code for uncoded script<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>enumeration</span> <span class="ph token attr-name">value</span><span class="ph token attr-value"><span class="ph token punctuation">=</span><span class="ph token punctuation">"</span>other<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>restriction</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>simpleType</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+                  </td>
+               </tr>
+            </tbody></table></div>
+   </div>
+</article></main></div><script language="javascript">//
+          
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+              return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+              return new bootstrap.Popover(popoverTriggerEl)
+            })
+         // 
+        </script><footer role="contentinfo"><div class="footer">
+
+ <details>
+  <summary>Published by DTA.</summary>
+  <p>Alle Inhalte dieser Seite unterstehen, soweit nicht anders gekennzeichnet, der Lizenz CC BY-SA 3.0 DE.
+    Weitere Informationen finden Sie im Impressum sowie in unseren Hinweisen zum Datenschutz.</p>
+
+<p>Zitierempfehlung: "Konvertierung in das DTA-Basisformat, hrsg. v. d. Berlin-Brandenburgischen Akademie der Wissenschaften.
+&lt;http://deutschestextarchiv.de&gt;.".</p>
+
+<p>2011–2023 Deutsches Textarchiv, Zentrum Sprache der Berlin-Brandenburgischen Akademie der Wissenschaften
+Kontakt: redaktion@deutschestextarchiv.de</p>
+</details> 
+</div></footer></body></html>
