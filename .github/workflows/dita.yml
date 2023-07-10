@@ -35,10 +35,9 @@ jobs:
           dita install https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
           dita install https://github.com/infotexture/dita-bootstrap/archive/master.zip
           dita install https://github.com/infotexture/dita-bootstrap.lunr/archive/master.zip
-        plugins: |
-          https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
-          https://github.com/jason-fox/fox.jason.prismjs/archive/master.zip
-          fox.jason.favicon              
+          dita install https://github.com/jason-fox/fox.jason.prismjs/archive/master.zip
+          dita install fox.jason.favicon 
+        # plugins: |
         project: .github/dita-ot/html.xml     
          
     - name: copy images
