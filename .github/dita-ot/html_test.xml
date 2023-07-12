@@ -24,8 +24,8 @@
       <param name="processing-mode" value="strict"/>
       <param name="icons.include" value="yes"/>
       <param name="popovers.include" value="yes"/>
-      <param name="lunr.search" value="https://tboenig.github.io/t_guidelines/html/trans"/>
-      <param name="open-graph.url" value="https://tboenig.github.io/t_guidelines/html/trans"/>
+      <param name="lunr.search" value="https://tboenig.github.io/t_guidelines/html"/>
+      <param name="open-graph.url" value="https://tboenig.github.io/t_guidelines/html"/>
     </publication>
   </deliverable>
   </project>
