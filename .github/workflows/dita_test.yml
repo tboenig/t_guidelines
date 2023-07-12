@@ -1,0 +1,70 @@
+name: dita
+on:
+  push:
+    tags:
+      - 't[0-9]+.[0-9]+.[0-9]+'
+      
+      
+      
+  workflow_dispatch:
+
+
+jobs:
+  build-dita:
+    name: Build DITA
+    runs-on: ubuntu-latest
+    permissions:
+     checks: write
+     contents: write
+     
+    steps:
+     
+    - name: Git checkout
+      uses: actions/checkout@v3
+
+     # Installation Styles
+      
+    - name: Build HTML5 + Bootstrap
+      uses: dita-ot/dita-ot-action@master
+      with:
+        install: |
+          apt-get update -q
+          export DEBIAN_FRONTEND=noninteractive
+          apt-get install -qy --no-install-recommends nodejs
+          nodejs -v
+        plugins: |
+          https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
+          https://github.com/infotexture/dita-bootstrap/archive/master.zip
+          https://github.com/infotexture/dita-bootstrap.lunr/archive/master.zip
+          https://github.com/jason-fox/fox.jason.prismjs/archive/master.zip
+          fox.jason.favicon              
+        project: .github/dita-ot/html_test.xml     
+         
+    - name: copy images
+      run: |
+          sudo cp de/resources/dfg_logo_schriftzug_blau_foerderung_4c.jpg out/html/resources/
+          sudo cp de/resources/icon20x24px-exported-transparent.png out/html/resources/
+          
+    #- name: Build PDF
+    #  uses: dita-ot/dita-ot-action@master
+    #  with:
+    #    install: |
+    #      # Run some arbitrary installation commands
+    #      apt-get update -q
+    #      apt-get install -qy --no-install-recommends nodejs
+    #      nodejs -v
+
+          # Install plugins
+          #dita install fox.jason.extend.css
+          #dita install org.doctales.xmltask
+          #dita install fox.jason.prismjs
+        #build: |
+          # Use the dita command line
+         # dita --input=kirk_konvertierung_workshop/konvertierung_basisformat.ditamap --format=pdf --output=out     
+
+
+    - name: Deploy GT-Overview to GitHub Pages 🚀
+      uses: JamesIves/github-pages-deploy-action@v4.4.1
+      with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: out  # The folder the action should deploy.
